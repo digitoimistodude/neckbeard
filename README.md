@@ -2,6 +2,8 @@
 
 Neckbeard is a WordPress starter theme based on [neckbeard](https://github.com/woothemes/neckbeard) by woothemes and [_s](https://github.com/automattic/_s) by Automattic.
 
+More documentation coming soon.
+
 ## What's NOT inside
 
 - No customizer
