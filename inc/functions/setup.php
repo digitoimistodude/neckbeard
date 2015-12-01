@@ -13,7 +13,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 /**
- * Assign the Neckbeard version to a var
+ * Assign the neckbeard version to a var
  */
 $theme 					= wp_get_theme( 'neckbeard' );
 $neckbeard_version 	= $theme['Version'];
@@ -75,17 +75,6 @@ if ( ! function_exists( 'neckbeard_setup' ) ) :
 			'widgets',
 		) );
 
-		// Setup the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'neckbeard_custom_background_args', array(
-			'default-color' => apply_filters( 'neckbeard_default_background_color', 'fcfcfc' ),
-			'default-image' => '',
-		) ) );
-
-		// Add support for the Site Logo plugin and the site logo functionality in JetPack
-		// https://github.com/automattic/site-logo
-		// http://jetpack.me/
-		add_theme_support( 'site-logo', array( 'size' => 'full' ) );
-
 		// Declare WooCommerce support
 		add_theme_support( 'woocommerce' );
 
@@ -145,25 +134,11 @@ function neckbeard_scripts() {
 
 	wp_enqueue_style( 'neckbeard-style', get_template_directory_uri() . '/style.css', '', $neckbeard_version );
 
-	wp_style_add_data( 'neckbeard-style', 'rtl', 'replace' );
-
 	wp_enqueue_script( 'neckbeard-navigation', get_template_directory_uri() . '/js/navigation.min.js', array( 'jquery' ), '20120206', true );
 
 	wp_enqueue_script( 'neckbeard-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
-	}
-}
-
-/**
- * Enqueue child theme stylesheet.
- * A separate function is required as the child theme css needs to be enqueued _after_ the parent theme
- * primary css and the separate WooCommerce css.
- * @since  1.5.3
- */
-function neckbeard_child_scripts() {
-	if ( is_child_theme() ) {
-		wp_enqueue_style( 'neckbeard-child-style', get_stylesheet_uri(), '' );
 	}
 }

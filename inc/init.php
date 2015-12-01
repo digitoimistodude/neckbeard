@@ -34,13 +34,6 @@ require get_template_directory() . '/inc/functions/extras.php';
 require get_template_directory() . '/inc/jetpack/jetpack.php';
 
 /**
- * Welcome screen
- */
-if ( is_admin() ) {
-	require get_template_directory() . '/inc/admin/welcome-screen/welcome-screen.php';
-}
-
-/**
  * Load WooCommerce compatibility files.
  */
 if ( is_woocommerce_activated() ) {

@@ -23,7 +23,7 @@
 	}
 }
 
-@media screen and (min-width: 768px) {
+@include susy-media($desktop) {
 	.bundle_form {
 		div.bundled_product_summary {
 			padding-left: 0;
@@ -54,7 +54,7 @@
 	}
 
 	.page-template-template-fullwidth-php,
-	.neckbeard-full-width-content {
+	.storefront-full-width-content {
 		.bundle_form {
 			div.bundled_product_summary {
 				padding-left: 0;

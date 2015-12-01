@@ -19,7 +19,6 @@
 			<?php
 			/**
 			 * @hooked neckbeard_footer_widgets - 10
-			 * @hooked neckbeard_credit - 20
 			 */
 			do_action( 'neckbeard_footer' ); ?>
 

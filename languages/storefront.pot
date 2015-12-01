@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Neckbeard 1.5.3\n"
+"Project-Id-Version: neckbeard 1.5.3\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/neckbeard/issues\n"
 "POT-Creation-Date: 2015-11-03 10:15:14+00:00\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +68,7 @@ msgid ""
 msgstr ""
 
 #: inc/admin/welcome-screen/sections/contribute.php:11
-msgid "Contribute to Neckbeard"
+msgid "Contribute to neckbeard"
 msgstr ""
 
 #: inc/admin/welcome-screen/sections/contribute.php:12
@@ -197,12 +197,12 @@ msgstr ""
 
 #: inc/admin/welcome-screen/welcome-screen.php:44
 msgid ""
-"Thanks for choosing Neckbeard! You can read hints and tips on how get the "
+"Thanks for choosing neckbeard! You can read hints and tips on how get the "
 "most out of your new theme on the %swelcome screen%s."
 msgstr ""
 
 #: inc/admin/welcome-screen/welcome-screen.php:45
-msgid "Get started with Neckbeard"
+msgid "Get started with neckbeard"
 msgstr ""
 
 #: inc/customizer/controls/more.php:16
@@ -437,7 +437,7 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Neckbeard"
+msgid "neckbeard"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -446,7 +446,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Neckbeard is the perfect theme for your next WooCommerce project. Designed "
+"neckbeard is the perfect theme for your next WooCommerce project. Designed "
 "and developed by WooThemes, it features a deep integration with our market "
 "leading WooCommerce plugin, several layout & color options to personalise "
 "your shop, multiple widget regions, a responsive design and much more. "

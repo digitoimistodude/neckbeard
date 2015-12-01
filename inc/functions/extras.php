@@ -8,26 +8,6 @@
  */
 
 /**
- * Check whether the Neckbeard Customizer settings ar enabled
- * @return boolean
- * @since  1.1.2
- */
-function is_neckbeard_customizer_enabled() {
-	return apply_filters( 'neckbeard_customizer_enabled', true );
-}
-
-/**
- * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
- *
- * @param array $args Configuration arguments.
- * @return array
- */
-function neckbeard_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
-}
-
-/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.

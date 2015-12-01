@@ -16,7 +16,6 @@
 add_action( 'after_setup_theme',			'neckbeard_setup' );
 add_action( 'widgets_init',					'neckbeard_widgets_init' );
 add_action( 'wp_enqueue_scripts',			'neckbeard_scripts',				10 );
-add_action( 'wp_enqueue_scripts',			'neckbeard_child_scripts',			30 ); // After WooCommerce
 add_action( 'neckbeard_before_content',	'neckbeard_header_widget_region',	10 );
 add_action( 'neckbeard_sidebar',			'neckbeard_get_sidebar',			10 );
 
@@ -35,10 +34,8 @@ add_action( 'neckbeard_header', 'neckbeard_primary_navigation',		50 );
 /**
  * Footer
  * @see  neckbeard_footer_widgets()
- * @see  neckbeard_credit()
  */
 add_action( 'neckbeard_footer', 'neckbeard_footer_widgets',	10 );
-add_action( 'neckbeard_footer', 'neckbeard_credit',			20 );
 
 /**
  * Homepage
@@ -90,7 +87,5 @@ add_action( 'neckbeard_page_after', 	'neckbeard_display_comments',	10 );
  * Extras
  * @see  neckbeard_setup_author()
  * @see  neckbeard_body_classes()
- * @see  neckbeard_page_menu_args()
  */
 add_filter( 'body_class',			'neckbeard_body_classes' );
-add_filter( 'wp_page_menu_args',	'neckbeard_page_menu_args' );

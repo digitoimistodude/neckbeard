@@ -7,7 +7,7 @@
 
 if ( ! function_exists( 'neckbeard_display_comments' ) ) {
 	/**
-	 * Neckbeard display comments
+	 * neckbeard display comments
 	 * @since  1.0.0
 	 */
 	function neckbeard_display_comments() {
@@ -20,7 +20,7 @@ if ( ! function_exists( 'neckbeard_display_comments' ) ) {
 
 if ( ! function_exists( 'neckbeard_comment' ) ) {
 	/**
-	 * Neckbeard comment template
+	 * neckbeard comment template
 	 * @since 1.0.0
 	 */
 	function neckbeard_comment( $comment, $args, $depth ) {
