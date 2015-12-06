@@ -29,11 +29,6 @@ require get_template_directory() . '/inc/structure/template-tags.php';
 require get_template_directory() . '/inc/functions/extras.php';
 
 /**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack/jetpack.php';
-
-/**
  * Load WooCommerce compatibility files.
  */
 if ( is_woocommerce_activated() ) {

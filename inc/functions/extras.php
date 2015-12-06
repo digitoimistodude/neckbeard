@@ -8,6 +8,26 @@
  */
 
 /**
+ * Check whether the neckbeard Customizer settings ar enabled
+ * @return boolean
+ * @since  1.1.2
+ */
+function is_neckbeard_customizer_enabled() {
+	return apply_filters( 'neckbeard_customizer_enabled', true );
+}
+
+/**
+ * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
+ *
+ * @param array $args Configuration arguments.
+ * @return array
+ */
+function neckbeard_page_menu_args( $args ) {
+	$args['show_home'] = true;
+	return $args;
+}
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
@@ -21,6 +41,22 @@ function neckbeard_body_classes( $classes ) {
 
 	if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 		$classes[]	= 'no-wc-breadcrumb';
+	}
+
+	/**
+	 * What is this?!
+	 * Take the blue pill, close this file and forget you saw the following code.
+	 * Or take the red pill, filter neckbeard_make_me_cute and see how deep the rabbit hole goes...
+	 */
+	$cute	= apply_filters( 'neckbeard_make_me_cute', false );
+
+	if ( true === $cute ) {
+		$classes[] = 'neckbeard-cute';
+	}
+
+	// If our main sidebar doesn't contain widgets, adjust the layout to be full-width.
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'neckbeard-full-width-content';
 	}
 
 	return $classes;

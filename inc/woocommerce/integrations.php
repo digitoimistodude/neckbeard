@@ -97,4 +97,12 @@ function neckbeard_woocommerce_integrations_scripts() {
 		wp_enqueue_style( 'neckbeard-woocommerce-bundles-style', get_template_directory_uri() . '/inc/woocommerce/css/bundles.css', 'neckbeard-woocommerce-style' );
 		wp_style_add_data( 'neckbeard-woocommerce-bundles-style', 'rtl', 'replace' );
 	}
+
+	/**
+	 * WooCommerce Multiple Shipping Addresses
+	 */
+	if ( is_woocommerce_extension_activated( 'WC_Ship_Multiple' ) ) {
+		wp_enqueue_style( 'neckbeard-woocommerce-sma-style', get_template_directory_uri() . '/inc/woocommerce/css/ship-multiple-addresses.css', 'neckbeard-woocommerce-style' );
+		wp_style_add_data( 'neckbeard-woocommerce-sma-style', 'rtl', 'replace' );
+	}
 }

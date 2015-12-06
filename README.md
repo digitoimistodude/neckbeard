@@ -11,6 +11,8 @@ More documentation coming soon.
 - No Jetpack stuff (see above)
 - No bourbon (mostly bloat and useless mixins, like compass)
 - No child theme support (this is going to be a starter theme for devs)
+- No sidebar (mostly not needed, building it separately if that's the case)
+- No widgets (see above)
 - Gulp instead of Grunt (simpler to read, newer)
 
 ## TODO
