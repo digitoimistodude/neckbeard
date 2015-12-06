@@ -6,13 +6,6 @@
  */
 
 /**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 980; /* pixels */
-}
-
-/**
  * Assign the neckbeard version to a var
  */
 $theme 					= wp_get_theme( 'neckbeard' );
@@ -132,7 +125,7 @@ function neckbeard_widgets_init() {
 function neckbeard_scripts() {
 	global $neckbeard_version;
 
-	wp_enqueue_style( 'neckbeard-style', get_template_directory_uri() . '/style.css', '', $neckbeard_version );
+	wp_enqueue_style( 'neckbeard-style', get_template_directory_uri() . '/css/layout.css', '', $neckbeard_version );
 
 	wp_enqueue_script( 'neckbeard-navigation', get_template_directory_uri() . '/js/navigation.min.js', array( 'jquery' ), '20120206', true );
 

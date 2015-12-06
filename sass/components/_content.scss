@@ -98,7 +98,11 @@
 
 @media screen and (min-width: 768px) {
 	.hentry.type-post {
-		@include clearfix;
+		&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 
 		.entry-meta {
 			@include span(2 of 9);

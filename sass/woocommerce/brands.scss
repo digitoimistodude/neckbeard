@@ -12,7 +12,11 @@
 .header-widget-region {
 	.widget_brand_thumbnails {
 		ul.brand-thumbnails {
-			@include clearfix;
+			&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 			text-align: center;
 
 			li {

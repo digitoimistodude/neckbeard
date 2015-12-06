@@ -47,7 +47,11 @@
 }
 
 .header-widget-region {
-	@include clearfix;
+	&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 
 	.widget {
 		margin: 0;

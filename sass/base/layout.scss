@@ -1,0 +1,245 @@
+// Set root charset
+@charset 'UTF-8' ;
+
+// Reset CSS
+@import '../../../../../bower_components/normalize-scss/_normalize';
+
+// Susy
+// Susy grid system. See: http://susydocs.oddbird.net/en/latest/
+@import '../../../../../bower_components/susy/sass/susy';
+
+// Utilities
+// Sass tools and helpers used across the project.
+@import 'config';
+@import 'mixins';
+
+// Base
+// Holds what we might call the boilerplate code for the project.
+@import 'base';
+@import 'typography';
+
+// Components
+// For smaller, less global components that do not belong in /layout
+@import '../components/forms';
+@import '../components/menu';
+@import '../components/content';
+@import '../components/post-formats';
+@import '../components/media';
+@import '../components/pagination';
+@import '../components/comments';
+@import '../components/widgets';
+@import '../components/infinite-scroll';
+@import '../components/404';
+
+// WooCommerce
+@import '../woocommerce/woocommerce';
+
+// General layout
+@media screen and (min-width: 768px) {
+  table.shop_table_responsive {
+    tbody {
+      tr {
+        td,
+        th {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .site-header {
+    .site-branding,
+    .site-logo-anchor,
+    .site-logo-link {
+      @include span(3 of 12);
+      display: block;
+      clear: both;
+
+      img {
+        height: auto;
+        max-width: 100%;
+        max-height: none;
+      }
+    }
+  }
+
+  .woocommerce-active {
+    .site-header {
+      .secondary-navigation {
+        @include span(6 of 12);
+      }
+
+      .site-search {
+        @include span(last 3 of 12);
+        clear: none;
+      }
+
+      .main-navigation {
+        @include span(9 of 12);
+        clear: both;
+      }
+
+      .site-header-cart {
+        @include span(last 3 of 12);
+        margin-bottom: 0;
+        padding-top: 1.618em;
+      }
+    }
+  }
+
+  .site-branding {
+    .site-description {
+      margin-bottom: 0;
+      display: block;
+    }
+  }
+
+  .site-branding,
+  .site-search,
+  .site-header-cart,
+  .site-logo-anchor,
+  .site-logo-link {
+    margin-bottom: 1em;
+  }
+
+  .site-header {
+    .subscribe-and-connect-connect {
+      float: right;
+      margin-bottom: 1em;
+
+      .icons {
+        list-style: none;
+        margin: 0;
+
+        a {
+          font-size: 1em !important;
+        }
+
+        li {
+          margin: 0 0 0 .53em !important;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .col-full {
+    @include container(65.141em);
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  .site-content {
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  .content-area {
+    @include span(9 of 12);
+  }
+
+  .widget-area {
+    @include span(last 3 of 12);
+  }
+
+  .right-sidebar {
+    .content-area {
+      @include span(9 of 12);
+    }
+
+    .widget-area {
+      @include span(last 3 of 12);
+    }
+  }
+
+  .left-sidebar {
+    .content-area {
+      @include span(last 9 of 12);
+    }
+
+    .widget-area {
+      @include span(3 of 12);
+    }
+  }
+
+  .neckbeard-full-width-content {
+    .content-area {
+      @include span(full);
+    }
+  }
+
+  .content-area,
+  .widget-area {
+    margin-bottom: 2.618em;
+  }
+
+// Full width & homepage template
+  .page-template-template-fullwidth-php,
+  .page-template-template-homepage-php {
+    .content-area {
+      @include span(full);
+    }
+  }
+
+// Footer widgets
+  .footer-widgets {
+		padding-top: 4.236em;
+    border-bottom: 3px solid rgba(#000, .05);
+
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    &.col-2 {
+      .block {
+        @include span(6 of 12);
+
+        &.footer-widget-2 {
+          @include last;
+        }
+      }
+    }
+
+    &.col-3 {
+      .block {
+        @include span(4 of 12);
+
+        &.footer-widget-3 {
+          @include last;
+        }
+      }
+    }
+
+    &.col-4 {
+      .block {
+        @include span(3 of 12);
+
+        &.footer-widget-4 {
+          @include last;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 65.141em) {
+  .col-full {
+    margin-left: 2.618em;
+    margin-right: 2.618em;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .col-full {
+    margin-left: 1.387em;
+    margin-right: 1.387em;
+  }
+}

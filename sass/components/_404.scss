@@ -17,7 +17,11 @@
 	}
 
 	.fourohfour-columns-2 {
-		@include clearfix;
+		&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 		padding: 2.618em 0;
 		border: 1px solid $color_border;
 		border-width: 1px 0;

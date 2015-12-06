@@ -16,7 +16,11 @@
 		margin-left: 0;
 
 		.comment-body {
-			@include clearfix;
+			&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 		}
 
 		.comment-content {
@@ -59,7 +63,11 @@
 		}
 
 		.reply {
-			@include clearfix;
+			&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 			font-size: .857em;
 			margin-bottom: 1.618em;
 
@@ -115,7 +123,11 @@
 
 @media screen and (min-width: 768px) {
 	.comment-list {
-		@include clearfix;
+		&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 
 		.comment {
 			clear: both;

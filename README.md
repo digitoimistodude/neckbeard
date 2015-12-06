@@ -6,14 +6,15 @@ More documentation coming soon.
 
 ## What's NOT inside
 
-- No customizer
-- No welcome screen
-- No Jetpack stuff
-- No bourbon
-- Gulp instead of Grunt
+- No customizer (this is dev-theme, not a theme for all)
+- No welcome screen (see above)
+- No Jetpack stuff (see above)
+- No bourbon (mostly bloat and useless mixins, like compass)
+- No child theme support (this is going to be a starter theme for devs)
+- Gulp instead of Grunt (simpler to read, newer)
 
 ## TODO
 
-- Add devpackages
-- Remove bourbon
-- Add normalize.scss
+- [ ] Add devpackages
+- [x] Remove bourbon
+- [x] Add normalize.scss

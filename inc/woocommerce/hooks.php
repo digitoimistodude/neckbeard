@@ -91,4 +91,3 @@ if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.3', '>=' ) ) {
  * @see  neckbeard_add_bookings_customizer_css()
  */
 add_action( 'wp_enqueue_scripts', 						'neckbeard_woocommerce_integrations_scripts' );
-add_action( 'wp_enqueue_scripts', 						'neckbeard_add_integrations_customizer_css' );

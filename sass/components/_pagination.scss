@@ -33,7 +33,11 @@
 	.page-numbers {
 		list-style: none;
 		margin: 0;
-		@include clearfix;
+		&:after {
+  clear: both;
+  content: '';
+  display: table;
+}
 
 		li {
 			display: inline-block;
