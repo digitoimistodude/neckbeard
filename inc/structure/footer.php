@@ -45,21 +45,3 @@ if ( ! function_exists( 'neckbeard_footer_widgets' ) ) {
 		<?php endif;
 	}
 }
-
-if ( ! function_exists( 'neckbeard_credit' ) ) {
-	/**
-	 * Display the theme credit
-	 * @since  1.0.0
-	 * @return void
-	 */
-	function neckbeard_credit() {
-		?>
-		<div class="site-info">
-			<?php echo esc_html( apply_filters( 'neckbeard_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ) ) ); ?>
-			<?php if ( apply_filters( 'neckbeard_credit_link', true ) ) { ?>
-			<br /> <?php printf( __( '%1$s designed by %2$s.', 'neckbeard' ), 'neckbeard', '<a href="http://www.woothemes.com" alt="Premium WordPress Themes & Plugins by WooThemes" title="Premium WordPress Themes & Plugins by WooThemes" rel="designer">WooThemes</a>' ); ?>
-			<?php } ?>
-		</div><!-- .site-info -->
-		<?php
-	}
-}

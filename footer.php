@@ -16,6 +16,10 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="col-full">
 
+			<div class="site-info">
+				<p><?php echo esc_html( 'neckbeard starter theme &copy;', 'neckbeard' ); ?> <?php echo date('Y'); ?></p>
+			</div><!-- .site-info -->
+
 			<?php
 			/**
 			 * @hooked neckbeard_footer_widgets - 10
