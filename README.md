@@ -13,6 +13,8 @@ More documentation coming soon.
 - No child theme support (this is going to be a starter theme for devs)
 - No sidebar (mostly not needed, building it separately if that's the case)
 - No widgets (see above)
+
+## Features
 - Gulp instead of Grunt (simpler to read, newer)
 
 ## TODO
@@ -20,3 +22,5 @@ More documentation coming soon.
 - [ ] Add devpackages
 - [x] Remove bourbon
 - [x] Add normalize.scss
+- [ ] Better typograhpy
+- [ ] Clean up clutter
