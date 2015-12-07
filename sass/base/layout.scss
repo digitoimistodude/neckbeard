@@ -39,14 +39,12 @@
 @import '../../../../../bower_components/concise/src/core/globals/functions';
 @import '../../../../../bower_components/concise/src/core/globals/mixins';
 @import 'globals';
-
 @import '../../../../../bower_components/concise/src/core/layout/base';
 @import '../../../../../bower_components/concise/src/core/layout/blockquotes';
 
 // Buttons
 @import '../../../../../bower_components/concise/src/core/layout/buttons';
 @import '../components/buttons';
-
 @import '../../../../../bower_components/concise/src/core/layout/headings';
 @import '../../../../../bower_components/concise/src/core/layout/lists';
 @import '../../../../../bower_components/concise/src/core/layout/print';
@@ -57,5 +55,68 @@
 
 // Concise UI Components
 @import '../../../../../bower_components/concise/src/addons/concise-ui/components/buttons';
-
 @import 'structure';
+
+//
+// Custom layout start
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 1rem;
+  max-width: $container-desktop;
+}
+
+.shade {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  background: #444;
+}
+
+.slide {
+  @include background-cover();
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: relative;
+  color: #fff;
+  border: 0;
+  background-color: #fff;
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  h1,
+  h2 {
+    margin-top: 0;
+  }
+
+  &.slide-front,
+  &.slide-page {
+    background-image: url('../images/coffee.jpg');
+
+    h1,
+    h2 {
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    p {
+      color: #fff;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

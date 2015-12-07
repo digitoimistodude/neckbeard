@@ -8,8 +8,10 @@
  */
 ?>
 
+	<?php if(!is_front_page() ) : ?>
 		</div><!-- .col-full -->
 	</div><!-- #content -->
+	<?php endif; ?>
 
 	<?php do_action( 'neckbeard_before_footer' ); ?>
 

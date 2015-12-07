@@ -48,6 +48,12 @@
   }
 }
 
+body.home {
+  .site-header#masthead {
+    margin-bottom: 0;
+  }
+}
+
 .header-widget-region {
   position: relative;
   z-index: 99;
@@ -104,6 +110,10 @@
 
 .site-info {
   padding: 2.618rem 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 // General layout
