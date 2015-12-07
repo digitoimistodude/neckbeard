@@ -36,7 +36,7 @@ if ( ! function_exists( 'neckbeard_site_branding' ) ) {
 			<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php if ( '' != get_bloginfo( 'description' ) ) { ?>
-					<p class="site-description"><?php echo bloginfo( 'description' ); ?></p>
+					<p class="site-description screen-reader-text"><?php echo bloginfo( 'description' ); ?></p>
 				<?php } ?>
 			</div>
 		<?php }
@@ -108,5 +108,3 @@ if ( ! function_exists( 'neckbeard_skip_links' ) ) {
 		<?php
 	}
 }
-
-

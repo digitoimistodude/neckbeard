@@ -62,6 +62,7 @@ Since Neckbeard is based on multiple themes, it tries to combine the best bits w
 * No bourbon (mostly bloat and useless mixins)
 * No child theme support (this is going to be a starter theme for dev-Dudes)
 * No widgets (see above)
+* No useless functions by default, like social icons
 
 ### Requirements
 
@@ -82,12 +83,11 @@ Go through [Dudestack Instructions](https://github.com/digitoimistodude/dudestac
 
 ## TODO
 
-- [ ] Add devpackages
 - [x] Replace bourbon with useful and sensible SASS
 - [x] Add normalize.scss
-- [ ] Add responsive typograhpy
+- [x] Add responsive typograhpy
 - [ ] Clean up clutter
-- [ ] Incluce parts of concise
+- [x] Incluce parts of concise
 - [ ] Add screenshot
 - [ ] Add default responsive navigation
 
