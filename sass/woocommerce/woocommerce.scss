@@ -73,13 +73,13 @@
     input[type=text],
     input[type=search] {
       padding: .625rem .9375rem;
-      line-height: 1;
+      line-height: 1.5;
       padding-left: 3.631rem;
     }
 
     form {
       &:before {
-        top: .625rem;
+        top: .7rem;
         left: .9375rem;
       }
     }
@@ -730,7 +730,7 @@ table.cart {
     margin-bottom: 1rem;
 
     &.checkout-button {
-      font-size: .9rem ;
+      font-size: .9rem;
     }
   }
 }
@@ -895,7 +895,7 @@ form.checkout {
     width: 100%;
 
     .button {
-      font-size: .9rem ;
+      font-size: .9rem;
       width: 100%;
       white-space: pre-wrap;
     }
@@ -984,7 +984,7 @@ ul.order_details {
 
     strong {
       display: block;
-      font-size: .9rem ;
+      font-size: .9rem;
       text-transform: none;
     }
   }
@@ -1229,10 +1229,10 @@ p.stars {
           position: absolute;
           top: 100%;
           left: 50%;
-          height: 1rem ;
-          width: 1rem ;
+          height: 1rem;
+          width: 1rem;
           line-height: inherit;
-          margin-left: -.5rem ;
+          margin-left: -.5rem;
         }
       }
     }
@@ -1885,7 +1885,7 @@ dl.variation {
       .button#place_order {
         display: block;
         width: 100%;
-        font-size: .9rem ;
+        font-size: .9rem;
       }
     }
   }

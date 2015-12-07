@@ -28,7 +28,6 @@
 			<?php
 			/**
 			 * @hooked neckbeard_skip_links - 0
-			 * @hooked neckbeard_social_icons - 10
 			 * @hooked neckbeard_site_branding - 20
 			 * @hooked neckbeard_secondary_navigation - 30
 			 * @hooked neckbeard_product_search - 40
