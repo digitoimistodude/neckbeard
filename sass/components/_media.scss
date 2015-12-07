@@ -25,7 +25,7 @@
     text-align: left;
     font-style: italic;
     border-bottom: 2px solid $color_border;
-    padding: 1em 0;
+    padding: 1rem 0;
   }
 }
 
@@ -34,7 +34,7 @@
   @extend %clearfix;
   margin-bottom: $vspacing;
 
-  .gallery-item {
+  .gallery-itrem {
     float: left;
 
     .gallery-icon {

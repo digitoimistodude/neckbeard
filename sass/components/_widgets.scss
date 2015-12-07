@@ -1,6 +1,6 @@
 // Widgets
 .widget {
-  margin: 0 0 3.631em;
+  margin: 0 0 3.631rem;
 
   select {
     max-width: 100%;
@@ -12,11 +12,11 @@
 
   h3.widget-title,
   h2.widgettitle {
-    font-size: 1.387em;
+    font-size: 1rem;
     letter-spacing: 0;
     border-bottom: 3px solid $color_body;
-    padding: 0 0 1em;
-    margin-bottom: 1em;
+    padding: 0 0 1rem;
+    margin-bottom: 1rem;
     font-weight: 700;
   }
 
@@ -25,17 +25,17 @@
     list-style: none;
 
     ul {
-      margin-left: 1.618em;
+      margin-left: .9375rem;
     }
   }
 }
 
 .widget-area {
   .widget {
-    font-size: .857em;
+    font-size: .857rem;
 
     h1.widget-title {
-      font-size: 1.387em;
+      font-size: 1rem;
     }
 
     a {
@@ -67,8 +67,8 @@
 
   .widget {
     margin: 0;
-    padding: 1em 0;
-    font-size: .857em;
+    padding: 1rem 0;
+    font-size: .857rem;
   }
 }
 
@@ -80,7 +80,7 @@
     input[type=text],
     input[type=search] {
       width: 100%;
-      padding-left: 2.618em;
+      padding-left: 2.618rem;
     }
 
     input[type=submit] {
@@ -93,8 +93,8 @@
       content: '\f002';
       font-family: 'FontAwesome';
       position: absolute;
-      top: .618em;
-      left: 1em;
+      top: .8rem;
+      left: 1rem;
       line-height: 1;
     }
   }
@@ -113,19 +113,19 @@
 
     li {
       list-style: none;
-      margin-bottom: .618em;
+      margin-bottom: .618rem;
 
       &:before {
         font-family: 'FontAwesome';
-        margin-right: .53em;
+        margin-right: .53rem;
         display: inline-block;
         opacity: .35;
       }
     }
 
     .sub-menu {
-      margin-top: .618em;
-      margin-left: 1.618em;
+      margin-top: .618rem;
+      margin-left: .9375rem;
     }
   }
 }
@@ -135,7 +135,7 @@
   #wp-calendar {
     th,
     td {
-      padding: .236em;
+      padding: .236rem;
       text-align: center;
     }
   }
@@ -151,7 +151,7 @@
     }
 
     ul.children {
-      margin: .618em 0 0 1.387em;
+      margin: .618rem 0 0 1rem;
     }
   }
 }

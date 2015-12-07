@@ -1,15 +1,12 @@
 @mixin screen-reader-text() {
   clip: rect(1px 1px 1px 1px);
-
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
 }
 
 @mixin message($glyph: "\f05a", $color: $info) {
-  padding: 1em 1.618em 1em 3.631em;
-  background: rgba( $color, .7 );
-  margin-bottom: 2.618em;
+  padding: 1rem .9375rem 1rem 3.631rem;
+  background: rgba($color, .7);
+  margin-bottom: 2.618rem;
   font-weight: normal;
   position: relative;
   color: #fff;
@@ -23,10 +20,10 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 2.618em;
-    background: rgba( darken( $color, 3% ), .7 );
+    width: 2.618rem;
+    background: rgba(darken($color, 3%), .7);
     text-align: center;
-    padding: 1em .618em;
+    padding: 1rem .618rem;
     font-weight: normal !important;
     text-shadow: none;
   }
@@ -44,8 +41,7 @@
   a.button {
     background: #fff;
     color: $color;
-    font-size: .857em;
-    padding: .202em .618em;
+    padding: .202rem .618rem;
 
     &:hover,
     &:active {

@@ -33,10 +33,30 @@
 // WooCommerce
 @import '../woocommerce/woocommerce';
 
+// Best bits from Concise Framework
+// http://concisecss.com/
+@import '../../../../../bower_components/concise/src/core/globals/globals';
+@import '../../../../../bower_components/concise/src/core/globals/functions';
+@import '../../../../../bower_components/concise/src/core/globals/mixins';
+@import 'globals';
+
+@import '../../../../../bower_components/concise/src/core/layout/base';
+@import '../../../../../bower_components/concise/src/core/layout/blockquotes';
+@import '../../../../../bower_components/concise/src/core/layout/buttons';
+@import '../../../../../bower_components/concise/src/core/layout/headings';
+@import '../../../../../bower_components/concise/src/core/layout/lists';
+@import '../../../../../bower_components/concise/src/core/layout/print';
+@import '../../../../../bower_components/concise/src/core/layout/tables';
+@import '../../../../../bower_components/concise/src/core/layout/type';
+@import '../../../../../bower_components/concise/src/core/utils/colors';
+@import '../../../../../bower_components/concise/src/core/utils/conditional-styling';
+@import '../../../../../bower_components/concise/src/core/utils/helpers';
+@import '../../../../../bower_components/concise/src/addons/concise-ui/concise-ui';
+
 // Header
 .site-header {
   background-color: #2c2d33;
-  padding-top: 2.618em;
+  padding-top: 2.618rem;
   color: #9aa0a7;
   background-position: center center;
   position: relative;
@@ -47,7 +67,7 @@
     display: block;
 
     img {
-      max-height: 2.618em;
+      max-height: 2.618rem;
       width: auto;
     }
   }
@@ -55,7 +75,7 @@
   .site-branding,
   .site-logo-anchor,
   .site-logo-link {
-    margin-bottom: 1.618em;
+    margin-bottom: .9375rem;
   }
 
   .widget {
@@ -67,13 +87,13 @@
 .home.page:not(.page-template-template-homepage),
 .home.post-type-archive-product {
   .site-header {
-    margin-bottom: 4.236em;
+    margin-bottom: 4.236rem;
   }
 }
 
 .no-wc-breadcrumb {
   .site-header {
-    margin-bottom: 4.236em;
+    margin-bottom: 4.236rem;
   }
 
   &.page-template-template-homepage {
@@ -90,8 +110,6 @@
 
 .site-branding {
   h1 {
-    font-size: 1.618em;
-    letter-spacing: -1px;
     margin: 0;
 
     a {
@@ -100,14 +118,13 @@
   }
 
   .site-description {
-    font-size: .857em;
     display: none;
   }
 }
 
 // Main content area
 .site-main {
-  margin-bottom: 2.618em;
+  margin-bottom: 2.618rem;
 }
 
 .site-content {
@@ -116,7 +133,7 @@
 
 .page-template-template-homepage {
   .site-main {
-    padding-top: 4.236em;
+    padding-top: 4.236rem;
   }
 }
 
@@ -124,7 +141,7 @@
 .site-footer {
   background-color: #f3f3f3;
   color: $color_body + #333;
-  padding: 1.618em 0;
+  padding: .9375rem 0;
 
   h1,
   h2,
@@ -141,7 +158,7 @@
 }
 
 .site-info {
-  padding: 2.618em 0;
+  padding: 2.618rem 0;
 }
 
 // General layout
@@ -192,7 +209,7 @@
       .site-header-cart {
         @include span(last 3 of 12);
         margin-bottom: 0;
-        padding-top: 1.618em;
+        padding-top: .9375rem;
       }
     }
   }
@@ -209,24 +226,20 @@
   .site-header-cart,
   .site-logo-anchor,
   .site-logo-link {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 
   .site-header {
     .subscribe-and-connect-connect {
       float: right;
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
 
       .icons {
         list-style: none;
         margin: 0;
 
-        a {
-          font-size: 1em !important;
-        }
-
         li {
-          margin: 0 0 0 .53em !important;
+          margin: 0 0 0 .53rem !important;
           display: inline-block;
         }
       }
@@ -234,7 +247,7 @@
   }
 
   .col-full {
-    @include container(65.141em);
+    @include container($container-desktop);
     &:after {
       clear: both;
       content: '';
@@ -286,7 +299,7 @@
 
   .content-area,
   .widget-area {
-    margin-bottom: 2.618em;
+    margin-bottom: 2.618rem;
   }
 
 // Full width & homepage template
@@ -299,7 +312,7 @@
 
 // Footer widgets
   .footer-widgets {
-		padding-top: 4.236em;
+		padding-top: 4.236rem;
     border-bottom: 3px solid rgba(#000, .05);
 
     &:after {
@@ -342,14 +355,14 @@
 
 @media screen and (max-width: 65.141em) {
   .col-full {
-    margin-left: 2.618em;
-    margin-right: 2.618em;
+    margin-left: 2.618rem;
+    margin-right: 2.618rem;
   }
 }
 
 @media screen and (max-width: 568px) {
   .col-full {
-    margin-left: 1.387em;
-    margin-right: 1.387em;
+    margin-left: .625rem;
+    margin-right: .625rem;
   }
 }

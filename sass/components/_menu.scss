@@ -17,7 +17,7 @@
 
 .menu-toggle {
   cursor: pointer;
-  margin: 2.244em auto;
+  margin: 2rem auto;
   display: block;
   width: 100%;
   text-align: left;
@@ -26,7 +26,7 @@
     font-family: 'FontAwesome';
     font-weight: 400;
     content: '\f0c9';
-    margin-right: .53em;
+    margin-right: .53rem;
   }
 
 	ul {
@@ -35,18 +35,18 @@
 
 	  ul {
 	    display: block;
-	    margin-left: 1.387em;
+	    margin-left: .625rem;
 	  }
 
 	  li {
 	    a {
-	      padding: .857em 1.387em;
+	      padding: .857rem .625rem;
 	      display: block;
 
 	      &:before {
 	        font-family: 'FontAwesome';
 	        content: '\f0f6';
-	        margin-right: .53em;
+	        margin-right: .53rem;
 	        font-weight: 400;
 	      }
 
@@ -69,7 +69,7 @@
 }
 
 .handheld-navigation {
-  margin-bottom: 2.244em;
+  margin-bottom: 2rem;
 
   ul {
     margin: 0;
@@ -162,7 +162,7 @@
 
   ul.menu {
     li {
-      &.current-menu-item {
+      &.current-menu-itrem {
         > a {
           color: $color_body;
         }
@@ -172,18 +172,18 @@
 
   // Primary Navigation
   .main-navigation {
-    padding-top: 1.618em;
+    padding-top: .9375rem;
 
     ul.menu,
     ul.nav-menu {
       > li {
         // The first level menu item
         > a {
-          padding: 0 1em 2.244em;
+          padding: 0 1rem 2rem;
         }
 
         &:first-child {
-          margin-left: -1em;
+          margin-left: -1rem;
         }
 
         &.menu-item-has-children,
@@ -199,8 +199,8 @@
               // The dropdown indicator
               content: '\f107';
               font-family: 'FontAwesome';
-              margin-left: 1em;
-              line-height: 1;
+              margin-left: 1rem ;
+              line-height: inherit;
               font-weight: inherit;
             }
           }
@@ -216,7 +216,7 @@
           background-color: rgba(0, 0, 0, .025);
 
           a {
-            padding: .857em 1em;
+            padding: .857rem 1rem;
           }
 
           &:last-child {
@@ -250,19 +250,19 @@
     }
 
     a {
-      padding: 0 1em 2.244em;
+      padding: 0 1rem 2rem;
     }
   }
 
   // Secondary Navigation
   .secondary-navigation {
-    margin: 0 0 1.618em;
+    margin: 0 0 .9375rem;
     width: auto;
     clear: none;
     line-height: 1;
 
     .menu {
-      font-size: .857em;
+      font-size: .857rem;
       width: auto;
       float: right;
 
@@ -293,25 +293,25 @@
         background-color: #2c2d33;
 
         a {
-          padding: .326em .857em;
+          padding: .326rem .857rem;
           background: rgba(#000, .05);
         }
 
         li:first-child a {
-          padding-top: 1em;
+          padding-top: 1rem;
         }
 
         li:last-child a {
-          padding-bottom: 1em;
+          padding-bottom: 1rem;
         }
 
         ul {
-          margin-top: -.618em;
+          margin-top: -.618rem;
         }
       }
 
       a {
-        padding: 1.387em .857em;
+        padding: .625rem .857rem;
         font-weight: 400;
         color: lighten($color_body, 20%);
 

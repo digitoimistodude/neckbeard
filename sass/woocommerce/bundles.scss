@@ -12,8 +12,8 @@
 
 .bundle_form {
 	div.bundled_product_summary {
-		padding-bottom: 1.618em !important;
-		margin-bottom: 1.618em;
+		padding-bottom: .9375rem !important;
+		margin-bottom: .9375rem;
 		border-bottom: 1px solid $color_border;
 		p.stock,
 		.price {
@@ -42,7 +42,7 @@
 
 			.details {
 				@include span( last 8 of 10 );
-				font-size: .857em;
+				font-size: .857rem;
 			}
 		}
 		div.bundled_product_summary.thumbnail_hidden {
@@ -65,7 +65,7 @@
 
 				.details {
 					@include span( last 6 of 8 );
-					font-size: 1em;
+					font-size: 1rem;
 				}
 			}
 			div.bundled_product_summary.thumbnail_hidden {

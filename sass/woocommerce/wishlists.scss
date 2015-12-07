@@ -11,7 +11,7 @@
 @import '../../../node_modules/susy/sass/susy';
 
 #wl-wrapper.wl-button-wrap {
-	padding: 1.618em 0 0 0;
+	padding: .9375rem 0 0 0;
 }
 
 .wl-add-link {
@@ -21,7 +21,7 @@
 	&:before {
 		font-family: "FontAwesome";
 		content: "\f004";
-		margin-right: .53em;
+		margin-right: .53rem;
 		font-weight: 400;
 	}
 }
@@ -34,7 +34,7 @@
 			float: none !important;
 
 			> a {
-				padding: 1em 1.387em;
+				padding: 1rem .625rem;
 				border: 0 !important;
 				margin: 0 !important;
 				background-color: transparent !important;
@@ -50,16 +50,16 @@
 
 	.wl-table {
 		td {
-			padding: .857em 1.387em !important;
+			padding: .857rem .625rem !important;
 
 			&:first-child {
-				padding-left: 1.387em !important;
+				padding-left: .625rem !important;
 			}
 		}
 
 		&.manage {
 			td {
-				padding: .53em !important;
+				padding: .53rem !important;
 			}
 		}
 	}
@@ -90,7 +90,7 @@
 	&:before {
 		font-family: "FontAwesome";
 		content: "\f067";
-		margin-right: .53em;
+		margin-right: .53rem;
 		font-weight: 400;
 	}
 }
@@ -114,10 +114,10 @@
 						display: block !important;
 						position: absolute;
 						top: 50%;
-						height: 1em;
-						width: 1em;
+						height: 1rem;
+						width: 1rem;
 						line-height: 1;
-						margin-top: -.5em;
+						margin-top: -.5rem;
 					}
 				}
 			}

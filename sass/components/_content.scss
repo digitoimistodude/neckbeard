@@ -4,32 +4,32 @@
     &:before {
       font-family: 'FontAwesome';
       font-weight: 400;
-      margin-right: .53em;
+      margin-right: .53rem;
       content: '\f08d';
     }
   }
 }
 
 .hentry {
-  margin: 0 0 4.236em;
-  padding-bottom: 3.631em;
+  margin: 0 0 4.236rem;
+  padding-bottom: 3.631rem;
   border-bottom: 6px solid rgba(#000, .05);
 
   .wp-post-image {
-    margin-bottom: 1.618em;
+    margin-bottom: .9375rem;
   }
 
   .entry-header {
     margin-bottom: 0;
 
     h1 {
-      padding-bottom: .618em;
+      padding-bottom: .618rem;
       margin-bottom: 3px;
     }
 
     .posted-on,
     .byline {
-      font-size: .857em;
+      font-size: .857rem;
     }
   }
 }
@@ -56,14 +56,14 @@
 .comments-link,
 .edit-link {
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 
   &:before {
     content: '\f114';
     font-family: 'FontAwesome';
-    margin-right: .53em;
+    margin-right: .53rem;
     display: inline-block;
-    width: 1em;
+    width: 1rem;
   }
 }
 
@@ -95,7 +95,7 @@
 
     .entry-meta {
       @include span(2 of 9);
-      font-size: .857em;
+      font-size: .857rem;
     }
 
     .entry-content {

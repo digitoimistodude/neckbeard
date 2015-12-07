@@ -17,7 +17,7 @@
 
 .pagination,
 .woocommerce-pagination {
-  padding: 1em 0;
+  padding: 1rem 0;
   border: 1px solid $color_border;
   border-width: 1px 0;
   text-align: center;
@@ -39,7 +39,7 @@
       .page-numbers {
         border-left-width: 0;
         display: inline-block;
-        padding: .327em .857em;
+        padding: .327rem .857rem;
         background-color: rgba(#000, .025);
         color: $color_body;
 
@@ -56,8 +56,8 @@
 
         &.prev,
         &.next {
-          padding-left: 1em;
-          padding-right: 1em;
+          padding-left: 1rem;
+          padding-right: 1rem;
         }
       }
 

@@ -24,10 +24,10 @@ $success: #0f834d;
 $info: #3d9cd2;
 
 // Layout sizes
-$vspacing: 1.618em;
+$vspacing: .9375rem;
 $desktop: 768px;
 $handheld: 568px;
-$container-width: 65.141em;
+$container-width: 65.141rem;
 $susy: (
 	columns: 12,
 	gutters: 1,
@@ -40,14 +40,6 @@ $susy: (
 	)
 );
 
-
-// Colors
-$color__base: #222;
-$color__alt: #f08a5d;
-$color__text: #555;
-$color__link: $color__alt;
-$color__link-visited: $color__alt;
-$color__link-hover: darken($color__alt, 15%);
 
 // Dude breakpoints
 $layout-max-width: 100%;
@@ -72,12 +64,3 @@ $container-mobile: 480px;
 
 // default: 480px
 $responsivenav: 872px;
-
-// set to navigation width
-$defaultpadding: 20px;
-$slidepadding: 100px;
-
-// Buttons
-$buttonpadding-vertical: 15px;
-$buttonpadding-horizontal: 27px;
-$buttontxtcolor: #fff;

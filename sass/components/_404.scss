@@ -1,7 +1,7 @@
 // 404 Styles
 .error404 {
   .site-content .widget_product_search {
-    padding: 1.618em;
+    padding: .9375rem;
     background-color: rgba(#000, .025);
 
     form {
@@ -14,10 +14,10 @@
   }
 
   .fourohfour-columns-2 {
-		padding: 2.618em 0;
+		padding: 2.618rem 0;
     border: 1px solid $color_border;
     border-width: 1px 0;
-    margin-bottom: 2.618em;
+    margin-bottom: 2.618rem;
 
     &:after {
       clear: both;
@@ -43,7 +43,7 @@
 
     .col-2 {
       @include span(last 6 of 12);
-      padding: 1.618em;
+      padding: .9375rem;
       background-color: rgba(#000, .025);
     }
   }

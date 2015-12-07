@@ -27,7 +27,7 @@
 			.product-rating-details {
 				table {
 					td {
-						padding: .202em .53em;
+						padding: .202rem .53rem;
 
 						&.rating-graph {
 							.bar {
@@ -47,7 +47,7 @@
 
 		.form-contribution {
 			border-color: $color_border;
-			padding: 1em;
+			padding: 1rem;
 
 			#review_rating_field {
 				fieldset {
@@ -58,13 +58,13 @@
 						float: right;
 
 						&.checkbox:before {
-							font-size: .857em;
+							font-size: .857rem;
 						}
 					}
 
 					.star-label {
 						float: none;
-						margin-left: .618em;
+						margin-left: .618rem;
 					}
 				}
 			}
@@ -84,7 +84,7 @@
 					padding-top: 0;
 
 					img.avatar {
-						width: 2.618em;
+						width: 2.618rem;
 						height: auto;
 						margin: 0;
 						float: right;
@@ -99,13 +99,13 @@
 
 						img,
 						iframe {
-							margin-bottom: 1.618em;
+							margin-bottom: .9375rem;
 						}
 					}
 
 					h3.contribution-title {
 						margin: 0;
-						font-size: 1em;
+						font-size: 1rem;
 					}
 
 					.contribution-actions {
@@ -121,7 +121,7 @@
 
 					ul.children {
 						li {
-							margin-bottom: 1.618em;
+							margin-bottom: .9375rem;
 						}
 					}
 				}
@@ -129,8 +129,8 @@
 
 			.form-contribution_comment {
 				@include span(last 5 of 6);
-				margin-bottom: 3.631em;
-				padding-top: 1.618em;
+				margin-bottom: 3.631rem;
+				padding-top: .9375rem;
 			}
 
 			ul.children + .form-contribution_comment {
@@ -141,15 +141,15 @@
 
 		.contribution-flag-form {
 			background-color: rgba(0,0,0,0.1);
-			padding: 1.618em;
-			margin-bottom: 1.618em;
+			padding: .9375rem;
+			margin-bottom: .9375rem;
 		}
 	}
 
 	.form-photo {
 		#photo_attachment_file {
 			color: inherit;
-			margin: 1em 0;
+			margin: 1rem 0;
 		}
 	}
 
@@ -158,9 +158,9 @@
 
 		> a {
 			display: inline-block;
-			margin-right: 1em;
-			padding: .53em 0;
-			border-bottom: .202em solid rgba(0,0,0,0.05);
+			margin-right: 1rem;
+			padding: .53rem 0;
+			border-bottom: .202rem solid rgba(0,0,0,0.05);
 
 			&.active {
 				border-bottom-color: $color_border;
@@ -188,8 +188,8 @@
 
 #tiptip_content,
 .chart-tooltip {
-	font-size: .857em;
-	padding: .618em 1em;
+	font-size: .857rem;
+	padding: .618rem 1rem;
 	background-color: rgba(0,0,0,0.8);
 }
 

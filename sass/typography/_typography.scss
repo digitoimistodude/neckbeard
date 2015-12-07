@@ -14,7 +14,6 @@
 body {
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-size: .938em;
 }
 
 img {
@@ -50,7 +49,7 @@ select {
 }
 
 fieldset {
-  padding: .35em .625em .75em;
+  padding: .35rem .625rem .75rem;
   margin: 0 2px;
   border: 1px solid #c0c0c0;
 }
@@ -118,7 +117,7 @@ kbd {
 pre {
   display: block;
   padding: 9.5px;
-  margin: 0 0 10px;
+  margin: 0 0 .625rem;
   color: #333;
   word-break: break-all;
   word-wrap: break-word;

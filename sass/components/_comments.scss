@@ -1,11 +1,11 @@
 // Comments
 #comments {
-  padding-top: 2.618em;
+  padding-top: 2.618rem;
 
   .comments-title {
     border-bottom: 1px dotted $color_border;
-    padding-bottom: .53em;
-    margin-bottom: 1.618em;
+    padding-bottom: .53rem;
+    margin-bottom: .9375rem;
   }
 
   .comment-list {
@@ -21,20 +21,20 @@
     }
 
     .comment-content {
-      padding-bottom: 1.618em;
-      margin-bottom: 1.618em;
+      padding-bottom: .9375rem;
+      margin-bottom: .9375rem;
     }
 
     .comment-meta {
       .avatar {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
         max-width: 32px;
         height: auto;
       }
 
       a.comment-date {
         opacity: .8;
-        font-size: .857em;
+        font-size: .857rem;
 
         &:hover {
           color: $color_body;
@@ -53,15 +53,15 @@
         &:after {
           font-family: 'FontAwesome';
           font-weight: 400;
-          margin-left: .53em;
+          margin-left: .53rem;
           content: '\f097';
         }
       }
     }
 
     .reply {
-			font-size: .857em;
-      margin-bottom: 1.618em;
+			font-size: .857rem;
+      margin-bottom: .9375rem;
 
 			&:after {
         clear: both;
@@ -76,7 +76,7 @@
       a {
         color: $color_body;
         background-color: rgba(0, 0, 0, .025);
-        padding: .53em 1em;
+        padding: .53rem 1rem;
         float: left;
 
         &:hover {
@@ -96,11 +96,11 @@
 }
 
 #respond {
-  margin-bottom: 4.236em;
+  margin-bottom: 4.236rem;
   clear: both;
-  padding: 1.618em;
+  padding: .9375rem;
   background-color: rgba(0, 0, 0, .0125);
-  border-top: .236em solid rgba(0, 0, 0, .025);
+  border-top: .236rem solid rgba(0, 0, 0, .025);
 
   .comment-form-author,
   .comment-form-email,
@@ -137,8 +137,8 @@
     }
 
     .comment-content {
-      padding-bottom: 3.631em;
-      margin-bottom: 3.631em;
+      padding-bottom: 3.631rem;
+      margin-bottom: 3.631rem;
     }
 
     .comment-content,

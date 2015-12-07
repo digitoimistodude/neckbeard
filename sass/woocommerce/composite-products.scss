@@ -45,7 +45,7 @@
 			border-bottom: 1px solid $color_border;
 
 			.content {
-				margin-bottom: 1.618em;
+				margin-bottom: .9375rem;
 			}
 
 			.composited_product_details_wrapper {
@@ -82,14 +82,14 @@
 
 		.select_label {
 			display: block;
-			margin-bottom: 1em;
+			margin-bottom: 1rem;
 		}
 
 		.clear_component_options:before {
 			content: "\f021";
 			font-weight: 400;
 			font-family: FontAwesome;
-			margin-right: .53em;
+			margin-right: .53rem;
 		}
 
 		.component_option_thumbnails {
