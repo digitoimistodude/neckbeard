@@ -16,8 +16,6 @@ More documentation coming soon.
     1. [Layout base & grid](#layout-base--grid)
     2. [Typography](#typography)
     3. [Development](#development)
-    4. [WordPress & functions](#wordpress--functions)
-    5. [Integrations](#integrations)
 4. [What about clutter?](#what-about-clutter)
 5. [Requirements](#requirements)
 6. [Usage](#usage)
