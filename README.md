@@ -87,11 +87,14 @@ Go through [Dudestack Instructions](https://github.com/digitoimistodude/dudestac
 - [x] Add normalize.scss
 - [x] Add responsive typograhpy
 - [ ] Clean up clutter
-- [x] Incluce parts of concise
+- [x] Include parts of concise
 - [ ] Add screenshot
 - [ ] Add default responsive navigation
 - [ ] Remove WooCommerce hooks that are not needed
 - [ ] Simplify CSS a LOT
+- [ ] Disable sidebar by default
+- [ ] Make page templates more flexible
+- [ ] Use containers instead of full wrapper from header to footer
 
 ### Contributing
 
