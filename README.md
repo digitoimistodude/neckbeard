@@ -90,6 +90,8 @@ Go through [Dudestack Instructions](https://github.com/digitoimistodude/dudestac
 - [x] Incluce parts of concise
 - [ ] Add screenshot
 - [ ] Add default responsive navigation
+- [ ] Remove WooCommerce hooks that are not needed
+- [ ] Simplify CSS a LOT
 
 ### Contributing
 
