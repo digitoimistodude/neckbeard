@@ -9,10 +9,11 @@
 // yourself. This means that changes that should be small, such as tweaking the
 // coloring or the sizing, can be done in one place, not all over the stylesheet.
 
-$font__headings: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
+$font__headings: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
 $font__base: "Bitter", "Helvetica Neue", Helvetica, sans-serif;
 
 // Base color scheme
+// More can be found in _globals.scss
 $body-background: #fcfcfc;
 $color_body: #60646c;
 $color_links: #87d37c;
@@ -24,6 +25,7 @@ $success: #0f834d;
 $info: #3d9cd2;
 
 // Layout sizes
+$font__base__size: 18;
 $vspacing: .9375rem;
 $desktop: 768px;
 $handheld: 568px;

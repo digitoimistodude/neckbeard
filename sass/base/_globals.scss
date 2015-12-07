@@ -31,11 +31,11 @@ $spacing-xl: unitSize(5);
 // Typography
 // ----------
 
-$font-family:          "Helvetica", "Arial", sans-serif;
-$font-family-headings: "Helvetica", "Arial", sans-serif;
+$font-family:          $font__base;
+$font-family-headings: $font__headings;
 $font-family-print:    "Georgia", "Times New Roman", "Times", serif;
-$font-family-mono:     "Consolas", monospace;
-$font-base-size:       18;
+$font-family-mono:     "Menlo", "Consolas", monospace;
+$font-base-size:       $font__base__size;
 
 
 //
@@ -65,7 +65,7 @@ $colors: (
   ),
 
   text: (
-    "primary":   #666,
+    "primary":   $color_body,
     "secondary": #aaa,
     "heading":   #222,
     "ui":        #fff
