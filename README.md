@@ -26,6 +26,8 @@ More documentation coming soon.
 - [ ] Add devpackages
 - [x] Replace bourbon with useful and sensible SASS
 - [x] Add normalize.scss
-- [ ] Better typograhpy
+- [ ] Add responsive typograhpy
 - [ ] Clean up clutter
-- [ ] Incluce concise
+- [ ] Incluce parts of concise
+- [ ] Add screenshot
+- [ ] Add default responsive navigation
