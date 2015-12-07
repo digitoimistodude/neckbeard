@@ -1,0 +1,313 @@
+// Header
+.site-header {
+  background-color: $base-background;
+  padding-top: 2.618rem;
+  color: #9aa0a7;
+  background-position: center center;
+  position: relative;
+  z-index: 999;
+
+  .site-logo-anchor,
+  .site-logo-link {
+    display: block;
+
+    img {
+      max-height: 2.618rem;
+      width: auto;
+    }
+  }
+
+  .site-branding,
+  .site-logo-anchor,
+  .site-logo-link {
+    margin-bottom: .9375rem;
+  }
+
+  .widget {
+    margin-bottom: 0;
+  }
+}
+
+.home.blog,
+.home.page:not(.page-template-template-homepage),
+.home.post-type-archive-product {
+  .site-header {
+    margin-bottom: 4.236rem;
+  }
+}
+
+.no-wc-breadcrumb {
+  .site-header {
+    margin-bottom: 4.236rem;
+  }
+
+  &.page-template-template-homepage {
+    .site-header {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header-widget-region {
+  position: relative;
+  z-index: 99;
+}
+
+.site-branding {
+  h1 {
+    margin: 0;
+
+    a {
+      font-weight: 700;
+    }
+  }
+
+  .site-description {
+    display: none;
+  }
+}
+
+// Main content area
+.site-main {
+  margin-bottom: 2.618rem;
+}
+
+.site-content {
+  outline: none;
+}
+
+.page-template-template-homepage {
+  .site-main {
+    padding-top: 4.236rem;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: #f3f3f3;
+  color: $color_body + #333;
+  padding: .9375rem 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color_body + #222;
+  }
+
+  a:not(.button) {
+    color: $color_links;
+  }
+}
+
+.site-info {
+  padding: 2.618rem 0;
+}
+
+// General layout
+@media screen and (min-width: 768px) {
+  table.shop_table_responsive {
+    tbody {
+      tr {
+        td,
+        th {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .site-header {
+    .site-branding,
+    .site-logo-anchor,
+    .site-logo-link {
+      @include span(3 of 12);
+      display: block;
+      clear: both;
+
+      img {
+        height: auto;
+        max-width: 100%;
+        max-height: none;
+      }
+    }
+  }
+
+  .woocommerce-active {
+    .site-header {
+      .secondary-navigation {
+        @include span(6 of 12);
+      }
+
+      .site-search {
+        @include span(last 3 of 12);
+        clear: none;
+      }
+
+      .main-navigation {
+        @include span(9 of 12);
+        clear: both;
+      }
+
+      .site-header-cart {
+        @include span(last 3 of 12);
+        margin-bottom: 0;
+        padding-top: .9375rem;
+      }
+    }
+  }
+
+  .site-branding {
+    .site-description {
+      margin-bottom: 0;
+      display: block;
+    }
+  }
+
+  .site-branding,
+  .site-search,
+  .site-header-cart,
+  .site-logo-anchor,
+  .site-logo-link {
+    margin-bottom: 1rem;
+  }
+
+  .site-header {
+    .subscribe-and-connect-connect {
+      float: right;
+      margin-bottom: 1rem;
+
+      .icons {
+        list-style: none;
+        margin: 0;
+
+        li {
+          margin: 0 0 0 .53rem !important;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .col-full {
+    @include container($container-desktop);
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  .site-content {
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  .content-area {
+    @include span(9 of 12);
+  }
+
+  .widget-area {
+    @include span(last 3 of 12);
+  }
+
+  .right-sidebar {
+    .content-area {
+      @include span(9 of 12);
+    }
+
+    .widget-area {
+      @include span(last 3 of 12);
+    }
+  }
+
+  .left-sidebar {
+    .content-area {
+      @include span(last 9 of 12);
+    }
+
+    .widget-area {
+      @include span(3 of 12);
+    }
+  }
+
+  .neckbeard-full-width-content {
+    .content-area {
+      @include span(full);
+    }
+  }
+
+  .content-area,
+  .widget-area {
+    margin-bottom: 2.618rem;
+  }
+
+// Full width & homepage template
+  .page-template-template-fullwidth-php,
+  .page-template-template-homepage-php {
+    .content-area {
+      @include span(full);
+    }
+  }
+
+// Footer widgets
+  .footer-widgets {
+		padding-top: 4.236rem;
+    border-bottom: 3px solid rgba(#000, .05);
+
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    &.col-2 {
+      .block {
+        @include span(6 of 12);
+
+        &.footer-widget-2 {
+          @include last;
+        }
+      }
+    }
+
+    &.col-3 {
+      .block {
+        @include span(4 of 12);
+
+        &.footer-widget-3 {
+          @include last;
+        }
+      }
+    }
+
+    &.col-4 {
+      .block {
+        @include span(3 of 12);
+
+        &.footer-widget-4 {
+          @include last;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 65.141em) {
+  .col-full {
+    margin-left: 2.618rem;
+    margin-right: 2.618rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .col-full {
+    margin-left: .625rem;
+    margin-right: .625rem;
+  }
+}

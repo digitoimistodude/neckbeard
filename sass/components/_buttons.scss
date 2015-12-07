@@ -1,0 +1,82 @@
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+
+  // Corrects font size not being inherited in all browsers
+  margin: 0;
+
+  // Improves appearance and consistency in all browsers
+  vertical-align: middle;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+a.button,
+.added_to_cart {
+  border: 0;
+  background: none;
+  background-color: $color_body;
+  border-color: $color_body;
+  color: #fff;
+  cursor: pointer;
+
+  // Improves usability and consistency of cursor style between image-type 'input' and others
+  line-height: 1;
+  padding: .618rem 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: none;
+  display: inline-block;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0;
+
+  &.cta,
+  &.alt {
+    background-color: $color_links;
+    border-color: $color_links;
+
+    &:hover {
+      background-color: $color_links;
+    }
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:focus {
+    outline: 2px solid $color_links;
+  }
+
+  &.added {
+    &:after {
+      content: '\f00c';
+      font-family: 'FontAwesome';
+      margin-left: .53rem;
+    }
+  }
+
+  &.loading {
+    opacity: .5;
+  }
+
+  &.small {
+    padding: .53rem .857rem;
+    font-size: .857rem;
+  }
+
+  &.disabled,
+  &:disabled {
+    opacity: .5 !important;
+
+    &:hover {
+      opacity: .5 !important;
+    }
+  }
+}
