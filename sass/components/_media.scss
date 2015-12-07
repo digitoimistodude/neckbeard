@@ -1,75 +1,65 @@
-/**
- * Media
- */
-
+// Media
 .page-content,
 .entry-content,
 .comment-content {
-	img.wp-smiley {
-		border: none;
-		margin-bottom: 0;
-		margin-top: 0;
-		padding: 0;
-		display: inline-block;
-	}
+  img.wp-smiley {
+    border: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    display: inline-block;
+  }
 }
 
-/**
- * Captions
- */
+// Captions
 .wp-caption {
-	margin-bottom: $vspacing;
-	max-width: 100%;
+  margin-bottom: $vspacing;
+  max-width: 100%;
 
-	img[class*="wp-image-"] {
-		display: block;
-		margin: 0 auto;
-	}
-	.wp-caption-text {
-		text-align: left;
-		font-style: italic;
-		border-bottom: 2px solid $color_border;
-		padding: 1em 0;
-	}
+  img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wp-caption-text {
+    text-align: left;
+    font-style: italic;
+    border-bottom: 2px solid $color_border;
+    padding: 1em 0;
+  }
 }
 
-/**
- * Galleries
- */
+// Galleries
 .gallery {
+  @extend %clearfix;
+  margin-bottom: $vspacing;
 
-	@extend %clearfix;
+  .gallery-item {
+    float: left;
 
-	margin-bottom: $vspacing;
+    .gallery-icon {
+      a {
+        display: block;
+      }
 
-	.gallery-item {
-		float: left;
+      img {
+        border: 0;
+        height: auto;
+        margin-bottom: 0;
+      }
+    }
 
-		.gallery-icon {
-			a { display: block; }
-
-			img {
-				border: none;
-				height: auto;
-				margin-bottom: 0;
-			}
-		}
-
-		.gallery-caption {
-			margin: 0;
-			text-align: center;
-		}
-
-	}
-
+    .gallery-caption {
+      margin: 0;
+      text-align: center;
+    }
+  }
 }
 
-/**
- * Embeds
- */
+// Embeds
 embed,
 iframe,
 object,
 video {
-	max-width: 100%;
+  max-width: 100%;
 }

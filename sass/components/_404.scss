@@ -1,52 +1,50 @@
-/**
- * 404 Styles
- */
-
+// 404 Styles
 .error404 {
-	.site-content .widget_product_search {
-		padding: 1.618em;
-		background-color: rgba(#000,.025);
+  .site-content .widget_product_search {
+    padding: 1.618em;
+    background-color: rgba(#000, .025);
 
-		form {
-			margin: 0;
-		}
-	}
+    form {
+      margin: 0;
+    }
+  }
 
-	.content-area {
-		width: 100%;
-	}
+  .content-area {
+    width: 100%;
+  }
 
-	.fourohfour-columns-2 {
-		&:after {
-  clear: both;
-  content: '';
-  display: table;
-}
+  .fourohfour-columns-2 {
 		padding: 2.618em 0;
-		border: 1px solid $color_border;
-		border-width: 1px 0;
-		margin-bottom: 2.618em;
+    border: 1px solid $color_border;
+    border-width: 1px 0;
+    margin-bottom: 2.618em;
 
-		ul.products,
-		ul.products li.product,
-		.widget {
-			margin-bottom: 0;
-		}
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
 
-		.col-1 {
-			@include span( 6 of 12 );
+    ul.products,
+    ul.products li.product,
+    .widget {
+      margin-bottom: 0;
+    }
 
-			ul.products {
-				li.product {
-					@include span( 3 of 6 );
-				}
-			}
-		}
+    .col-1 {
+      @include span(6 of 12);
 
-		.col-2 {
-			@include span( last 6 of 12 );
-			padding: 1.618em;
-			background-color: rgba(#000,.025);
-		}
-	}
+      ul.products {
+        li.product {
+          @include span(3 of 6);
+        }
+      }
+    }
+
+    .col-2 {
+      @include span(last 6 of 12);
+      padding: 1.618em;
+      background-color: rgba(#000, .025);
+    }
+  }
 }

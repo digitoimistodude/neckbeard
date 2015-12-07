@@ -19,7 +19,7 @@
 @import '../typography/typography';
 
 // Components
-// For smaller, less global components that do not belong in /layout
+// For smaller, less global components that do not belong to layout
 @import '../components/forms';
 @import '../components/menu';
 @import '../components/content';
@@ -28,7 +28,6 @@
 @import '../components/pagination';
 @import '../components/comments';
 @import '../components/widgets';
-@import '../components/infinite-scroll';
 @import '../components/404';
 
 // WooCommerce

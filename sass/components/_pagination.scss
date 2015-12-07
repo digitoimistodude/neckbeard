@@ -1,87 +1,81 @@
-/**
- * Pagination
- */
-
+// Pagination
 .site-main [class*="navigation"] {
-	margin: 0 0 $vspacing;
-	overflow: hidden;
+  margin: 0 0 $vspacing;
+  overflow: hidden;
 
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
+  .nav-previous {
+    float: left;
+    width: 50%;
+  }
 
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
-
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
 }
 
-/**
- * Pagination
- */
 .pagination,
 .woocommerce-pagination {
-	padding: 1em 0;
-	border: 1px solid $color_border;
-	border-width: 1px 0;
-	text-align: center;
-	clear: both;
-
-	.page-numbers {
-		list-style: none;
-		margin: 0;
-		&:after {
+  padding: 1em 0;
+  border: 1px solid $color_border;
+  border-width: 1px 0;
+  text-align: center;
   clear: both;
-  content: '';
-  display: table;
-}
 
-		li {
-			display: inline-block;
+  .page-numbers {
+    list-style: none;
+    margin: 0;
 
-			.page-numbers {
-				border-left-width: 0;
-				display: inline-block;
-				padding: .327em .857em;
-				background-color: rgba(#000,.025);
-				color: $color_body;
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
 
-				&.current {
-					font-weight: 700;
-					background-color: $color_links;
-					border-color: $color_links;
-					color: #fff;
-				}
+    li {
+      display: inline-block;
 
-				&.dots {
-					background-color: transparent;
-				}
+      .page-numbers {
+        border-left-width: 0;
+        display: inline-block;
+        padding: .327em .857em;
+        background-color: rgba(#000, .025);
+        color: $color_body;
 
-				&.prev,
-				&.next {
-					padding-left: 1em;
-					padding-right: 1em;
-				}
-			}
+        &.current {
+          font-weight: 700;
+          background-color: $color_links;
+          border-color: $color_links;
+          color: #fff;
+        }
 
-			a.page-numbers {
-				&:hover {
-					background-color: rgba(#000,.05);
-				}
-			}
-		}
-	}
+        &.dots {
+          background-color: transparent;
+        }
+
+        &.prev,
+        &.next {
+          padding-left: 1em;
+          padding-right: 1em;
+        }
+      }
+
+      a.page-numbers {
+        &:hover {
+          background-color: rgba(#000, .05);
+        }
+      }
+    }
+  }
 }
 
 .rtl {
-	.pagination,
-	.woocommerce-pagination {
-		a.next,
-		a.prev {
-			transform: rotateY(180deg);
-		}
-	}
+  .pagination,
+  .woocommerce-pagination {
+    a.next,
+    a.prev {
+      transform: rotateY(180deg);
+    }
+  }
 }
