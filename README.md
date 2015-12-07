@@ -2,7 +2,7 @@
 
 Neckbeard is a WordPress starter theme based on [storefront](https://github.com/woothemes/storefront), [dudestarter](https://github.com/digitoimistodude/dudestarter) and [_s](https://github.com/automattic/_s), currently used by Digitoimisto Dude Oy, a boutique digital agency from Central Finland, Jyväskylä.
 
-![Neckbeard logo](https://github.com/digitoimistodude/neckbeard/blob/master/neckbeard.svg "Neckbeard logo")
+![Neckbeard logo](https://cdn.rawgit.com/digitoimistodude/neckbeard/master/neckbeard.svg "Neckbeard logo")
 
 **Theme is currently in early alpha-development.**
 
