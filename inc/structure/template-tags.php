@@ -215,22 +215,6 @@ if ( ! function_exists( 'neckbeard_homepage_content' ) ) {
 	}
 }
 
-if ( ! function_exists( 'neckbeard_social_icons' ) ) {
-	/**
-	 * Display social icons
-	 * If the subscribe and connect plugin is active, display the icons.
-	 * @link http://wordpress.org/plugins/subscribe-and-connect/
-	 * @since 1.0.0
-	 */
-	function neckbeard_social_icons() {
-		if ( class_exists( 'Subscribe_And_Connect' ) ) {
-			echo '<div class="subscribe-and-connect-connect">';
-			subscribe_and_connect_connect();
-			echo '</div>';
-		}
-	}
-}
-
 if ( ! function_exists( 'neckbeard_get_sidebar' ) ) {
 	/**
 	 * Display neckbeard sidebar
