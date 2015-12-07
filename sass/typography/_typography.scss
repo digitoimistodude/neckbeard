@@ -1,0 +1,138 @@
+// Font awesome icon fonts
+@import '../../../../../bower_components/font-awesome/scss/font-awesome';
+
+// Import Pennman's mixin for Google Web Fonts
+@import '../../../../../bower_components/sass-web-fonts/web-fonts';
+
+// Import Sass-boilerplate font-face mixin for custom webfonts.
+@import 'fontface';
+
+// Declare actual webfonts in use.
+@import 'webfonts';
+
+// Typography base settings
+body {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-size: .938em;
+}
+
+img {
+	height: auto; // Make sure images are scaled correctly.
+	max-width: 100%; // Adhere to container width.
+	display: block;
+}
+
+a {
+	color: $color_links;
+	text-decoration: none;
+	font-weight: 700;
+
+	&:focus {
+		outline: 1px solid $color_links;
+	}
+}
+
+body,
+button,
+input,
+textarea {
+	color: $color_body;
+	font-family: $font__base;
+	line-height: 1.618;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+select {
+	color: initial;
+	font-family: $font__base;
+}
+
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 1px solid #c0c0c0;
+}
+
+legend {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: auto;
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}

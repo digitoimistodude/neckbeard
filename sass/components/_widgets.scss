@@ -1,91 +1,103 @@
-/**
- * Widgets
- */
-
+// Widgets
 .widget {
-	margin: 0 0 3.631em;
+  margin: 0 0 3.631em;
 
-	select {
-		max-width: 100%;
-	}
+  select {
+    max-width: 100%;
+  }
 
-	.widget-search .search-submit {
-		@include screen-reader-text();
-	}
+  .widget-search .search-submit {
+    @include screen-reader-text();
+  }
 
-	h3.widget-title,
-	h2.widgettitle {
-		font-size: 1.387em;
-		letter-spacing: 0;
-		border-bottom: 3px solid $color_body;
-		padding: 0 0 1em;
-		margin-bottom: 1em;
-		font-weight: 700;
-	}
+  h3.widget-title,
+  h2.widgettitle {
+    font-size: 1.387em;
+    letter-spacing: 0;
+    border-bottom: 3px solid $color_body;
+    padding: 0 0 1em;
+    margin-bottom: 1em;
+    font-weight: 700;
+  }
 
-	ul {
-		margin-left: 0;
-		list-style: none;
+  ul {
+    margin-left: 0;
+    list-style: none;
 
-		ul {
-			margin-left: 1.618em;
-		}
-	}
+    ul {
+      margin-left: 1.618em;
+    }
+  }
 }
 
 .widget-area {
-	.widget {
-		a.button {
-			font-weight: 700 !important;
-			color: #fff;
+  .widget {
+    font-size: .857em;
 
-			&:hover {
-				color: #fff;
-			}
-		}
-	}
+    h1.widget-title {
+      font-size: 1.387em;
+    }
+
+    a {
+      color: $color_body;
+      font-weight: 400;
+
+      &:hover {
+        color: $color_links;
+      }
+
+			&.button {
+	      font-weight: 700 !important;
+	      color: #fff;
+
+	      &:hover {
+	        color: #fff;
+	      }
+	    }
+    }
+  }
 }
 
 .header-widget-region {
-	&:after {
-  clear: both;
-  content: '';
-  display: table;
-}
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 
-	.widget {
-		margin: 0;
-		padding: 1em 0;
-		font-size: .857em;
-	}
+  .widget {
+    margin: 0;
+    padding: 1em 0;
+    font-size: .857em;
+  }
 }
 
 .widget_search,
 .widget_product_search {
-	form {
-		position: relative;
+  form {
+    position: relative;
 
-		input[type=text],
-		input[type=search] {
-			width: 100%;
-			padding-left: 2.618em;
-		}
+    input[type=text],
+    input[type=search] {
+      width: 100%;
+      padding-left: 2.618em;
+    }
 
-		input[type=submit] {
-			@include screen-reader-text();
-			top: 0;
-			left: 0;
-		}
+    input[type=submit] {
+      @include screen-reader-text();
+      top: 0;
+      left: 0;
+    }
 
-		&:before {
-			content: "\f002";
-			font-family: "FontAwesome";
-			position: absolute;
-			top: .618em;
-			left: 1em;
-			line-height: 1;
-		}
-	}
+    &:before {
+      content: '\f002';
+      font-family: 'FontAwesome';
+      position: absolute;
+      top: .618em;
+      left: 1em;
+      line-height: 1;
+    }
+  }
 }
 
 .widget_recent_entries,
@@ -95,125 +107,107 @@
 .widget_recent_comments,
 .widget_nav_menu,
 .widget_links {
-	ul {
-		margin: 0;
+  ul {
+    margin: 0;
+    padding: 0;
 
-		li {
-			list-style: none;
-			margin-bottom: .618em;
+    li {
+      list-style: none;
+      margin-bottom: .618em;
 
-			&:before {
-				font-family: "FontAwesome";
-				margin-right: .53em;
-				display: inline-block;
-				opacity: 0.35;
-			}
-		}
+      &:before {
+        font-family: 'FontAwesome';
+        margin-right: .53em;
+        display: inline-block;
+        opacity: .35;
+      }
+    }
 
-		.sub-menu {
-			margin-top: .618em;
-			margin-left: 1.618em;
-		}
-	}
+    .sub-menu {
+      margin-top: .618em;
+      margin-left: 1.618em;
+    }
+  }
 }
 
 .widget-area,
 .footer-widgets {
-	#wp-calendar {
-		th,
-		td {
-			padding: .236em;
-			text-align: center;
-		}
-	}
+  #wp-calendar {
+    th,
+    td {
+      padding: .236em;
+      text-align: center;
+    }
+  }
 }
 
 .widget_recent_entries,
 .widget_pages {
-	ul {
-		li {
-			&:before {
-				content: "\f0f6";
-			}
-		}
+  ul {
+    li {
+      &:before {
+        content: '\f0f6';
+      }
+    }
 
-		ul.children {
-			margin: .618em 0 0 1.387em;
-		}
-	}
+    ul.children {
+      margin: .618em 0 0 1.387em;
+    }
+  }
 }
 
 .widget_categories {
-	ul {
-		li {
-			&:before {
-				content: "\f114";
-			}
+  ul {
+    li {
+      &:before {
+        content: '\f114';
+      }
 
-			&.current-cat {
-				&:before {
-					content: "\f115";
-				}
-			}
-		}
-	}
+      &.current-cat {
+        &:before {
+          content: '\f115';
+        }
+      }
+    }
+  }
 }
 
 .widget_archive {
-	ul {
-		li {
-			&:before {
-				content: "\f115";
-			}
-		}
-	}
+  ul {
+    li {
+      &:before {
+        content: '\f115';
+      }
+    }
+  }
 }
 
 .widget_recent_comments {
-	ul {
-		li {
-			&:before {
-				content: "\f0e5";
-			}
-		}
-	}
+  ul {
+    li {
+      &:before {
+        content: '\f0e5';
+      }
+    }
+  }
 }
 
 .widget_nav_menu {
-	ul {
-		li {
-			&:before {
-				content: "\f0f6";
-			}
-		}
-	}
+  ul {
+    li {
+      &:before {
+        content: '\f0f6';
+      }
+    }
+  }
 }
 
 .widget_links {
-	ul {
-		li {
-			&:before {
-				content: "\f08e";
-			}
-		}
-	}
-}
-
-.widget-area {
-	.widget {
-		font-size: .857em;
-
-		h1.widget-title {
-			font-size: 1.387em;
-		}
-
-		a {
-			color: $color_body;
-			font-weight: 400;
-
-			&:hover {
-				color: $color_links;
-			}
-		}
-	}
+  ul {
+    li {
+      &:before {
+        content: '\f08e';
+      }
+    }
+  }
 }

@@ -1,0 +1,23 @@
+// Custom web fonts:
+
+//@include fontFace('Proxima Nova','../fonts/proximanova-regular', 400);
+//@include fontFace('Proxima Nova','../fonts/proximanova-italic', 400, italic);
+
+// Google web fonts:
+
+$url: web-fonts-url(
+  ('Open Sans':
+    ('400',
+     '400 italic',
+     '700',
+     '700 italic')
+     ),
+  ('Noto Serif':
+    ('400',
+    '400 italic',
+    '700',
+    '700 italic')
+  )
+);
+
+@import url($url);
