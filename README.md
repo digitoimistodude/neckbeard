@@ -94,8 +94,8 @@ Go through [Dudestack Instructions](https://github.com/digitoimistodude/dudestac
 - [ ] Add default responsive navigation
 - [ ] Remove WooCommerce hooks that are not needed
 - [ ] Simplify CSS a LOT
-- [ ] Disable sidebar by default
-- [ ] Make page templates more flexible
+- [x] Disable sidebar by default
+- [x] Make page templates more flexible
 - [ ] Use containers instead of full wrapper from header to footer
 
 ### Contributing
