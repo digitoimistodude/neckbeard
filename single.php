@@ -7,27 +7,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="content" class="site-content" tabindex="-1">
+	<div class="col-full">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-			<?php
-			do_action( 'neckbeard_single_post_before' );
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			get_template_part( 'content', 'single' );
+					<?php
+					do_action( 'neckbeard_single_post_before' );
 
-			/**
-			 * @hooked neckbeard_post_nav - 10
-			 * @hooked neckbeard_display_comments - 20
-			 */
-			do_action( 'neckbeard_single_post_after' );
-			?>
+					get_template_part( 'content', 'single' );
 
-		<?php endwhile; // end of the loop. ?>
+					/**
+			 		* @hooked neckbeard_post_nav - 10
+			 		* @hooked neckbeard_display_comments - 20
+			 		*/
+					do_action( 'neckbeard_single_post_after' );
+					?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<?php endwhile; // end of the loop. ?>
 
-<?php do_action( 'neckbeard_sidebar' ); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+	</div><!-- .col-full -->
+</div><!-- #content -->
+
 <?php get_footer(); ?>

@@ -43,21 +43,7 @@ function neckbeard_body_classes( $classes ) {
 		$classes[]	= 'no-wc-breadcrumb';
 	}
 
-	/**
-	 * What is this?!
-	 * Take the blue pill, close this file and forget you saw the following code.
-	 * Or take the red pill, filter neckbeard_make_me_cute and see how deep the rabbit hole goes...
-	 */
-	$cute	= apply_filters( 'neckbeard_make_me_cute', false );
-
-	if ( true === $cute ) {
-		$classes[] = 'neckbeard-cute';
-	}
-
-	// If our main sidebar doesn't contain widgets, adjust the layout to be full-width.
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-		$classes[] = 'neckbeard-full-width-content';
-	}
+	$classes[] = 'neckbeard-full-width-content';
 
 	return $classes;
 }

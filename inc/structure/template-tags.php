@@ -215,17 +215,6 @@ if ( ! function_exists( 'neckbeard_homepage_content' ) ) {
 	}
 }
 
-if ( ! function_exists( 'neckbeard_get_sidebar' ) ) {
-	/**
-	 * Display neckbeard sidebar
-	 * @uses get_sidebar()
-	 * @since 1.0.0
-	 */
-	function neckbeard_get_sidebar() {
-		get_sidebar();
-	}
-}
-
 if ( ! function_exists( 'neckbeard_post_thumbnail' ) ) {
 	/**
 	 * Display post thumbnail

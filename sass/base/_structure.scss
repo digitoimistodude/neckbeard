@@ -28,32 +28,6 @@
   }
 }
 
-.home.blog,
-.home.page:not(.page-template-template-homepage),
-.home.post-type-archive-product {
-  .site-header {
-    margin-bottom: 4.236rem;
-  }
-}
-
-.no-wc-breadcrumb {
-  .site-header {
-    margin-bottom: 4.236rem;
-  }
-
-  &.page-template-template-homepage {
-    .site-header {
-      margin-bottom: 0;
-    }
-  }
-}
-
-body.home {
-  .site-header#masthead {
-    margin-bottom: 0;
-  }
-}
-
 .header-widget-region {
   position: relative;
   z-index: 99;

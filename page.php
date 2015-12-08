@@ -12,28 +12,33 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="content" class="site-content" tabindex="-1">
+	<div class="col-full">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-				<?php
-				do_action( 'neckbeard_page_before' );
-				?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+					<?php
+					do_action( 'neckbeard_page_before' );
+					?>
 
-				<?php
-				/**
-				 * @hooked neckbeard_display_comments - 10
-				 */
-				do_action( 'neckbeard_page_after' );
-				?>
+					<?php get_template_part( 'content', 'page' ); ?>
 
-			<?php endwhile; // end of the loop. ?>
+					<?php
+					/**
+				 	* @hooked neckbeard_display_comments - 10
+				 	*/
+					do_action( 'neckbeard_page_after' );
+					?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<?php endwhile; // end of the loop. ?>
 
-<?php do_action( 'neckbeard_sidebar' ); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+	</div><!-- .col-full -->
+</div><!-- #content -->
+
 <?php get_footer(); ?>

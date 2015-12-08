@@ -45,11 +45,6 @@
 	 */
 	do_action( 'neckbeard_before_content' ); ?>
 
-	<?php if(!is_front_page() ) : ?>
-	<div id="content" class="site-content" tabindex="-1">
-		<div class="col-full">
-	<?php endif; ?>
-
 		<?php
 		/**
 		 * @hooked woocommerce_breadcrumb - 10

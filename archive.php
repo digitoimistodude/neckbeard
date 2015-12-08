@@ -10,29 +10,34 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="content" class="site-content" tabindex="-1">
+	<div class="col-full">
 
-		<?php if ( have_posts() ) : ?>
+		<section id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php the_archive_title(); ?>
-				</h1>
+				<?php if ( have_posts() ) : ?>
 
-				<?php the_archive_description(); ?>
-			</header><!-- .page-header -->
+					<header class="page-header">
+						<h1 class="page-title">
+							<?php the_archive_title(); ?>
+						</h1>
 
-			<?php get_template_part( 'loop' ); ?>
+						<?php the_archive_description(); ?>
+					</header><!-- .page-header -->
 
-		<?php else : ?>
+					<?php get_template_part( 'loop' ); ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+				<?php else : ?>
 
-		<?php endif; ?>
+					<?php get_template_part( 'content', 'none' ); ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+				<?php endif; ?>
 
-<?php do_action( 'neckbeard_sidebar' ); ?>
+			</main><!-- #main -->
+		</section><!-- #primary -->
+
+	</div><!-- .col-full -->
+</div><!-- #content -->
+
 <?php get_footer(); ?>

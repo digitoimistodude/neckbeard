@@ -13,21 +13,26 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="content" class="site-content" tabindex="-1">
+	<div class="col-full">
 
-		<?php if ( have_posts() ) : ?>
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-			<?php get_template_part( 'loop' ); ?>
+				<?php if ( have_posts() ) : ?>
 
-		<?php else : ?>
+					<?php get_template_part( 'loop' ); ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+				<?php else : ?>
 
-		<?php endif; ?>
+					<?php get_template_part( 'content', 'none' ); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<?php endif; ?>
 
-<?php do_action( 'neckbeard_sidebar' ); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+	</div><!-- .col-full -->
+</div><!-- #content -->
+
 <?php get_footer(); ?>

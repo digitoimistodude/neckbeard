@@ -7,63 +7,69 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="content" class="site-content" tabindex="-1">
+	<div class="col-full">
 
-		<main id="main" class="site-main" role="main">
+		<div id="primary" class="content-area">
 
-			<section class="error-404 not-found">
+			<main id="main" class="site-main" role="main">
 
-				<div class="page-content">
+				<section class="error-404 not-found">
 
-					<header class="page-header">
-						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'neckbeard' ); ?></h1>
-					</header><!-- .page-header -->
+					<div class="page-content">
 
-					<p><?php esc_html_e( 'Nothing was found at this location. Try searching, or check out the links below.', 'neckbeard' ); ?></p>
+						<header class="page-header">
+							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'neckbeard' ); ?></h1>
+						</header><!-- .page-header -->
 
-					<?php
-					if ( is_woocommerce_activated() ) {
-						the_widget( 'WC_Widget_Product_Search' );
-					} else {
-						get_search_form();
-					}
-					?>
+						<p><?php esc_html_e( 'Nothing was found at this location. Try searching, or check out the links below.', 'neckbeard' ); ?></p>
 
-					<?php
-					if ( is_woocommerce_activated() ) {
+						<?php
+						if ( is_woocommerce_activated() ) {
+							the_widget( 'WC_Widget_Product_Search' );
+						} else {
+							get_search_form();
+						}
+						?>
 
-						echo '<div class="fourohfour-columns-2">';
+						<?php
+						if ( is_woocommerce_activated() ) {
 
-							echo '<div class="col-1">';
+							echo '<div class="fourohfour-columns-2">';
 
-								neckbeard_promoted_products();
+								echo '<div class="col-1">';
 
-							echo '</div>';
+									neckbeard_promoted_products();
 
-							echo '<div class="col-2">';
+									echo '</div>';
 
-								echo '<h2>' . esc_html__( 'Product Categories', 'neckbeard' ) . '</h2>';
+									echo '<div class="col-2">';
 
-								the_widget( 'WC_Widget_Product_Categories', array(
+									echo '<h2>' . esc_html__( 'Product Categories', 'neckbeard' ) . '</h2>';
+
+									the_widget( 'WC_Widget_Product_Categories', array(
 															'count'		=> 1,
-														) );
-							echo '</div>';
+															) );
+															echo '</div>';
 
-						echo '</div>';
+															echo '</div>';
 
-						echo '<h2>' . esc_html__( 'Popular Products', 'neckbeard' ) . '</h2>';
+															echo '<h2>' . esc_html__( 'Popular Products', 'neckbeard' ) . '</h2>';
 
-						echo neckbeard_do_shortcode( 'best_selling_products', array(
-															'per_page' 	=> 4,
-															'columns'	=> 4,
-														) );
-					}
-					?>
+															echo neckbeard_do_shortcode( 'best_selling_products', array(
+																'per_page' 	=> 4,
+																'columns'	=> 4,
+															) );
+														}
+														?>
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+					</div><!-- .page-content -->
+				</section><!-- .error-404 -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+	</div><!-- .col-full -->
+</div><!-- #content -->
 
 <?php get_footer(); ?>

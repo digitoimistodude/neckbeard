@@ -63,6 +63,8 @@ Since Neckbeard is based on multiple themes, it tries to combine the best bits w
 * No child theme support (this is going to be a starter theme for dev-Dudes)
 * No widgets (see above)
 * No useless functions by default, like social icons
+* No sidebar by default
+* Full width by default
 
 ### Requirements
 

@@ -431,6 +431,7 @@ a.reset_variations {
 // Breadcrumbs
 
 .woocommerce-breadcrumb {
+  @extend .col-full;
   margin-bottom: 4.236rem;
   font-size: .857rem;
   padding: 1rem 0;

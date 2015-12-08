@@ -7,25 +7,30 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="content" class="site-content" tabindex="-1">
+	<div class="col-full">
 
-		<?php if ( have_posts() ) : ?>
+		<section id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'neckbeard' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+			<?php if ( have_posts() ) : ?>
 
-			<?php get_template_part( 'loop' ); ?>
+				<header class="page-header">
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'neckbeard' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				</header><!-- .page-header -->
 
-		<?php else : ?>
+				<?php get_template_part( 'loop' ); ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php else : ?>
 
-		<?php endif; ?>
+				<?php get_template_part( 'content', 'none' ); ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+			<?php endif; ?>
 
-<?php do_action( 'neckbeard_sidebar' ); ?>
+			</main><!-- #main -->
+		</section><!-- #primary -->
+
+	</div><!-- .col-full -->
+</div><!-- #content -->
+
 <?php get_footer(); ?>

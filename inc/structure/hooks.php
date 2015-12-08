@@ -11,13 +11,11 @@
  * @see  neckbeard_widgets_init()
  * @see  neckbeard_scripts()
  * @see  neckbeard_header_widget_region()
- * @see  neckbeard_get_sidebar()
  */
 add_action( 'after_setup_theme',			'neckbeard_setup' );
 add_action( 'widgets_init',					'neckbeard_widgets_init' );
 add_action( 'wp_enqueue_scripts',			'neckbeard_scripts',				10 );
 add_action( 'neckbeard_before_content',	'neckbeard_header_widget_region',	10 );
-add_action( 'neckbeard_sidebar',			'neckbeard_get_sidebar',			10 );
 
 /**
  * Header

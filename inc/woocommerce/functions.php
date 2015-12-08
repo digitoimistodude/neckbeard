@@ -14,6 +14,8 @@
 if ( ! function_exists( 'neckbeard_before_content' ) ) {
 	function neckbeard_before_content() {
 		?>
+<div id="content" class="site-content" tabindex="-1">
+	<div class="col-full">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 	    	<?php
@@ -31,8 +33,10 @@ if ( ! function_exists( 'neckbeard_after_content' ) ) {
 		?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
+	</div><!-- .col-full -->
+</div><!-- #content -->
 
-		<?php do_action( 'neckbeard_sidebar' );
+		<?php
 	}
 }
 
@@ -84,11 +88,6 @@ if ( ! function_exists( 'neckbeard_cart_link_fragment' ) ) {
  */
 function neckbeard_woocommerce_scripts() {
 	global $neckbeard_version;
-
-	wp_enqueue_style( 'neckbeard-woocommerce-style', get_template_directory_uri() . '/inc/woocommerce/css/woocommerce.css', $neckbeard_version );
-	wp_style_add_data( 'neckbeard-woocommerce-style', 'rtl', 'replace' );
-
-	wp_register_script( 'neckbeard-sticky-payment', get_template_directory_uri() . '/js/checkout.min.js', 'jquery', $neckbeard_version, true );
 
 	if ( is_checkout() ) {
 		wp_enqueue_script( 'neckbeard-sticky-payment' );
