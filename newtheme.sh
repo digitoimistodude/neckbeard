@@ -38,10 +38,10 @@ echo "${yellow}Copying starter theme to project folder ${HOME}/Projects/${PROJEC
 cp -R ${STARTERTHEMEPATH} ${PROJECTTHEMEPATH}
 echo "${yellow}Generating theme files with theme name and texdomain called ${THEMENAME}${txtreset}"
 
-cd $STARTERTHEMEPATH && rm -rf .git
+cd $PROJECTTHEMEPATH && rm -rf .git
 
 # THE magical sed command by rolle (goes through every single file in theme folder and searchs and replaces every neckbeard instance with THEMENAME):
-for i in `grep -rl neckbeard * 2> /dev/null`; do sed -i '' -e "s;neckbeard;seak;" $i $i; done
+for i in `grep -rl neckbeard * 2> /dev/null`; do sed -i '' -e "s;neckbeard;${THEMENAME};" $i $i; done
 
 echo "${yellow}Setting up package.json & gulpfile.js from devpackages github${txtreset}"
 cd ${PROJECTPATH}
@@ -79,5 +79,5 @@ mkdir -p ${PROJECTPATH}/media
 chmod 777 ${PROJECTPATH}/media
 echo "${yellow}Activating theme...${txtreset}"
 cd ${PROJECTPATH}
-ssh vagrant@10.1.2.3 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme activate $THEMENAME"
+ssh vagrant@10.1.2.4 "cd /var/www/$PROJECTNAME/;vendor/wp-cli/wp-cli/bin/wp theme activate $THEMENAME"
 echo "${boldgreen}All done! Theme generated and activated. Your theme can be found at $PROJECTTHEMEPATH${txtreset}"

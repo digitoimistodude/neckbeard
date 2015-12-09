@@ -32,10 +32,8 @@ add_action( 'neckbeard_header', 'neckbeard_primary_navigation',		50 );
 /**
  * Footer
  * @see  neckbeard_footer_widgets()
- * @see  neckbeard_credit()
  */
 add_action( 'neckbeard_footer', 'neckbeard_footer_widgets',	10 );
-add_action( 'neckbeard_footer', 'neckbeard_credit',			20 );
 
 /**
  * Homepage
