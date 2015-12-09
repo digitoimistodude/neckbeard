@@ -89,7 +89,7 @@ add_action('admin_menu', 'menuitems_remove');
 
 /*
  * Hiding things customers won't usually need.
- * Hides Tools, Themes, Customize, Widgets, Plugins, Custom Fields, Feedback and Jetpack by default.
+ * Hides Tools, Themes, Customize, Widgets, Plugins, Custom Fields, Feedback.
  */
 function remove_admin_menu_links() {
     $user = wp_get_current_user();
@@ -107,7 +107,6 @@ function remove_admin_menu_links() {
         remove_menu_page('plugins.php');
         remove_menu_page('edit.php?post_type=acf');
         remove_menu_page('edit.php?post_type=feedback');
-        remove_menu_page('admin.php?page=jetpack');
 
   }
 

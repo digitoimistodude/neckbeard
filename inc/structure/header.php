@@ -29,17 +29,14 @@ if ( ! function_exists( 'neckbeard_site_branding' ) ) {
 	 * @since  1.0.0
 	 * @return void
 	 */
-	function neckbeard_site_branding() {
-		if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
-			jetpack_the_site_logo();
-		} else { ?>
+	function neckbeard_site_branding() { ?>
 			<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php if ( '' != get_bloginfo( 'description' ) ) { ?>
 					<p class="site-description screen-reader-text"><?php echo bloginfo( 'description' ); ?></p>
 				<?php } ?>
 			</div>
-		<?php }
+		<?php
 	}
 }
 
