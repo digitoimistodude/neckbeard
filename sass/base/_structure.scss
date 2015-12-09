@@ -1,3 +1,16 @@
+// Components
+// For smaller, less global components that do not belong to layout
+@import '../components/forms';
+@import '../components/menu';
+@import '../components/content';
+@import '../components/post-formats';
+@import '../components/media';
+@import '../components/pagination';
+@import '../components/comments';
+@import '../components/widgets';
+@import '../components/404';
+@import '../components/buttons';
+
 // Header
 .site-header {
   background-color: $base-background;

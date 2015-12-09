@@ -9,8 +9,12 @@
 // yourself. This means that changes that should be small, such as tweaking the
 // coloring or the sizing, can be done in one place, not all over the stylesheet.
 
+// Font specific
 $font__headings: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
 $font__base: "Bitter", "Helvetica Neue", Helvetica, sans-serif;
+$font__weight__header: 700;
+$font__size__min: 16px;
+$font__size__base: 18px;
 
 // Base color scheme
 // More can be found in _globals.scss

@@ -16,48 +16,14 @@
 // Base
 // Holds what we might call the boilerplate code for the project.
 @import 'base';
+
+// Typography settings
 @import '../typography/typography';
-
-// Import SASS-rem mixin.
-@import '../../../../../bower_components/sass-rem/rem';
-
-// Components
-// For smaller, less global components that do not belong to layout
-@import '../components/forms';
-@import '../components/menu';
-@import '../components/content';
-@import '../components/post-formats';
-@import '../components/media';
-@import '../components/pagination';
-@import '../components/comments';
-@import '../components/widgets';
-@import '../components/404';
 
 // WooCommerce
 @import '../woocommerce/woocommerce';
 
-// Best bits from Concise Framework
-// http://concisecss.com/
-@import '../../../../../bower_components/concise/src/core/globals/globals';
-@import '../../../../../bower_components/concise/src/core/globals/functions';
-@import '../../../../../bower_components/concise/src/core/globals/mixins';
-@import 'globals';
-@import '../../../../../bower_components/concise/src/core/layout/base';
-@import '../../../../../bower_components/concise/src/core/layout/blockquotes';
-
-// Buttons
-@import '../../../../../bower_components/concise/src/core/layout/buttons';
-@import '../components/buttons';
-@import '../../../../../bower_components/concise/src/core/layout/headings';
-@import '../../../../../bower_components/concise/src/core/layout/lists';
-@import '../../../../../bower_components/concise/src/core/layout/print';
-@import '../../../../../bower_components/concise/src/core/layout/type';
-@import '../../../../../bower_components/concise/src/core/utils/colors';
-@import '../../../../../bower_components/concise/src/core/utils/conditional-styling';
-@import '../../../../../bower_components/concise/src/core/utils/helpers';
-
-// Concise UI Components
-@import '../../../../../bower_components/concise/src/addons/concise-ui/components/buttons';
+// Structure, everything before starting the real layout
 @import 'structure';
 
 //
