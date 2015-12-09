@@ -18,6 +18,9 @@
 @import 'base';
 @import '../typography/typography';
 
+// Import SASS-rem mixin.
+@import '../../../../../bower_components/sass-rem/rem';
+
 // Components
 // For smaller, less global components that do not belong to layout
 @import '../components/forms';
