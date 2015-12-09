@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+// WooCommerce start
+.woocommerce {
+  .site-content {
+    padding-top: 0;
+  }
+}
+
 // Header elements
 .woocommerce-active {
   .site-header {
@@ -432,7 +439,7 @@ a.reset_variations {
 
 .woocommerce-breadcrumb {
   @extend .col-full;
-  margin-bottom: 4.236rem;
+  margin: 0;
   font-size: .857rem;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, .05);

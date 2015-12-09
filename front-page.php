@@ -34,14 +34,7 @@ get_header(); ?>
 			<main id="main" class="site-main" role="main">
 
 				<?php
-				/**
-				 * @hooked neckbeard_homepage_content - 10
-				 * @hooked neckbeard_product_categories - 20
-				 * @hooked neckbeard_recent_products - 30
-				 * @hooked neckbeard_featured_products - 40
-				 * @hooked neckbeard_popular_products - 50
-				 * @hooked neckbeard_on_sale_products - 60
-				 */
+				// See hooks.php
 				do_action( 'homepage' ); ?>
 
 			</main><!-- #main -->

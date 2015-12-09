@@ -47,9 +47,9 @@ add_action( 'neckbeard_footer', 'neckbeard_credit',			20 );
  * @see  neckbeard_on_sale_products()
  */
 add_action( 'homepage', 'neckbeard_homepage_content',		10 );
-add_action( 'homepage', 'neckbeard_product_categories',	20 );
+// add_action( 'homepage', 'neckbeard_product_categories',	20 );
 add_action( 'homepage', 'neckbeard_recent_products',		30 );
-add_action( 'homepage', 'neckbeard_featured_products',		40 );
+// add_action( 'homepage', 'neckbeard_featured_products',		40 );
 add_action( 'homepage', 'neckbeard_popular_products',		50 );
 add_action( 'homepage', 'neckbeard_on_sale_products',		60 );
 
