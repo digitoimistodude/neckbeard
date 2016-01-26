@@ -13,6 +13,14 @@ require get_template_directory() . '/inc/init.php';
 // NECKBEARD theme specific functions below
 // Let's try and keep this minimal...
 
+/*
+* Hide WP updates nag
+*/
+add_action('admin_menu','wphidenag');
+function wphidenag() {
+   remove_action( 'admin_notices', 'update_nag', 3 );
+}
+
 /**
  * Remove query strings from static resources for optimization
  *
