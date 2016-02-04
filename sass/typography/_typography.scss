@@ -72,12 +72,6 @@ blockquote {
   color: $color_body;
 }
 
-// Typography base settings
-body {
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
-}
-
 img {
 	height: auto; // Make sure images are scaled correctly.
 	max-width: 100%; // Adhere to container width.

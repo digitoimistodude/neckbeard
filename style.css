@@ -4,7 +4,7 @@ Theme URI:    	http://www.neckbeard.fi
 Author:       	Digitoimisto Dude Oy
 Author URI:		  httsp://www.dude.fi
 Description:    neckbeard WordPress theme, based on Storefront, dudestarter and _s.
-Version:      	0.9
+Version:      	0.91
 License:      	GNU General Public License v2 or later
 License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  	neckbeard
@@ -13,7 +13,7 @@ Tags:
 
 /**
    * NECKBEARD version information
-   * Last _s commit checked: 9ce731d (no useful parts this time)
+   * Last _s commit checked: 9ce731d
    * Last storefront commit checked: cf0b5dc
    *
    * @link https://github.com/Automattic/_s/commits/master
@@ -21,5 +21,5 @@ Tags:
    *
    * @author Roni Laukkarinen
    * @since 01.12.2015
-   * @version 28.01.2016
+   * @version 04.02.2016
    */
