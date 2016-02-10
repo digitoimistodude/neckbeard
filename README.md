@@ -4,9 +4,7 @@ Neckbeard is a WordPress starter theme based on [storefront](https://github.com/
 
 ![Neckbeard logo](https://cdn.rawgit.com/digitoimistodude/neckbeard/master/neckbeard.svg "Neckbeard logo")
 
-**Theme is currently in early alpha-development.**
-
-More documentation coming soon.
+**Theme is currently in development.**
 
 ## Table of contents
 
@@ -54,7 +52,7 @@ Neckbeard is licensed with [The MIT License (MIT)](http://choosealicense.com/lic
 
 ## What about clutter?
 
-Since Neckbeard is based on multiple themes, it tries to combine the best bits without having too much clutter. This is a challenging tasks, but here's something that is left out from Storefront or Underscores to achieve more *DRY* theme:
+Since Neckbeard is based on multiple themes, it tries to combine the best bits without having too much clutter. This is a challenging task (nearly impossible in WooCommerce), but here's something that is left out from Storefront or Underscores to achieve more *DRY* theme:
 
 * No customizer (this is dev-theme, not a theme for everyone)
 * No welcome screen (see above)
